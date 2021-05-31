@@ -1,0 +1,14 @@
+name: Feature
+description: Create a new feature request
+labels: []
+body:
+  - type: input
+    attributes:
+      label: What feature are you adding?
+      description: 'example: fixing navbar component'
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Describe your issue
+      description: Describe the new feature you want to add
