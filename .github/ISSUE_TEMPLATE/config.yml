@@ -4,5 +4,5 @@ contact_links:
     url: https://github.com/reactdeveloperske/community-support/issues
     about: 'Ask to Join the Reactjs Developer Community Group.'
   - name: Help
-    url: https://github.com/reactdeveloperske/reactdevske-website/discussions/new?category=help
+    url: https://github.com/reactdeveloperske/reactdevske-website/discussions/new?category=q-a
     about: 'If you have a question or need help, ask a question on the discussion forums.'
