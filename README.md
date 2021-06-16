@@ -6,7 +6,6 @@ Check out the live version [HERE](https://reactdevske.netlify.app/)
 
 ## Contributing to the project
 
-___
 
 Contributions are always welcome!
 
