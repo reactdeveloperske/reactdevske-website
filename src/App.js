@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Contribute to creating The Kenya React Developer Community Website Here 
+          Contribute to creating The Reactjs Developer Community Kenya Website Here 
         </p>
         <a
           className="App-link"
@@ -16,6 +16,14 @@ function App() {
           rel="noopener noreferrer"
         >
           Contribute on Github
+        </a>
+        <a
+          className="App-link"
+          href="http://bit.ly/joinreactdevske"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Join Our Telegram Community Chat
         </a>
       </header>
     </div>
