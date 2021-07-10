@@ -1,12 +1,15 @@
-# Reactjs Developer Community Kenya Website
+<h1 align="center" style="margin-top: 1em; margin-bottom: 3em;">
+  <p><a href="https://reactdevske.netlify.app/"><img alt="logo" src="./src/reactdevske.svg" alt="reactdevske" width="125"></a></p>
+  <p> <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" alt="Waving Hand" width="25px"> Welcome to Reactjs Developer Community Kenya Website!</p>
+</h1>
 
-This is the community showcase website for the React Developer Community in Kenya
+This is the repo for the showcase website of the React Developer Community in Kenya
+
 
 Check out the live version [HERE](https://reactdevske.netlify.app/)
 
 ## Contributing to the project
 
-___
 
 Contributions are always welcome!
 
