@@ -1,0 +1,19 @@
+/* next line for debugging purposes  */
+/* .navbar {
+    border: 2px solid black;
+} */
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1em;
+}
+
+.navbar ul li {
+    margin: 1em;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+}

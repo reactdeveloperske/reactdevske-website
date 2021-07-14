@@ -52,6 +52,11 @@ $ git merge upstream/develop
 ```
 $ yarn
 ```
+or
+
+```
+$ npm install
+```
 
 ### Make awesome changes!
 
@@ -65,6 +70,10 @@ $ git checkout -b new_branch_name
 
 ```
 $ yarn start
+```
+or 
+```
+npm start
 ```
 
 - Open this directory in your favorite text editor / IDE, and see your changes live by visiting `localhost:3000` from your browser

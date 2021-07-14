@@ -1,6 +1,4 @@
-import logo from './reactdevske.svg';
 import './App.css';
-import NavBar from './Components/NavBar/NavBar';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomePage from './Pages/HomePage/HomePage';
 import AboutPage from './Pages/AboutPage/AboutPage';
@@ -12,7 +10,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <NavBar />
         <Switch>
           <Route path="/" exact component={HomePage}/>
           <Route path="/about" component={AboutPage}/>
@@ -21,29 +18,6 @@ function App() {
           <Route path="/contact" component={ContactPage}/>
         </Switch>
       </Router>
-
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Contribute to creating The Reactjs Developer Community Kenya Website Here 
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/reactdeveloperske/reactdevske-website"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Contribute on Github
-        </a>
-        <a
-          className="App-link"
-          href="http://bit.ly/joinreactdevske"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Join Our Telegram Community Chat
-        </a>
-      </header>
     </div>
   );
 }
