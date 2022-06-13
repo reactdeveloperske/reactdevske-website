@@ -3,17 +3,43 @@
     border: 2px solid black;
 } */
 
+/*You can remove the font if it's not suitable*/
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
+.navbar {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1em;
+    color: black;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar-logo {
+    width: 70px;
+    height: 70px;
+}
+
 .navbar ul {
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
-    margin-right: 1em;
+    align-items: center;
 }
 
 .navbar ul li {
-    margin: 1em;
+    margin: 0 1em;
 }
 
-.navbar ul li a {
-    text-decoration: none;
+.navbar button {
+    all: unset;
+    color: white;
+    background-color: rgb(0, 175, 0);
+    border-radius: 15px;
+    padding: 10px 20px;
+    
 }
