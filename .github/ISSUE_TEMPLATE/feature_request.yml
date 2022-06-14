@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest an idea for this project
+labels: ['🛠 goal: fix']
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A brief description of the feature and how it is related to the project.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution description
+      description: Please describe a solution that you would like
+    validations:
+      required: false
+  - type: textarea
+    id: extrainfo
+    attributes:
+      label: Additional information
+      description: Is there anything else we should know about this feature?
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        You can also join our Telegram community [here](https://docs.google.com/forms/d/e/1FAIpQLSc_k5sffFTeL9oDug41nXU4Spw5cV84ExaL3jNFu_I1FTZO1w/viewform)
