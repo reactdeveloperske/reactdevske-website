@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "playwright test"
   },
   "dependencies": {
     "next": "12.1.6",
@@ -14,6 +15,7 @@
     "react-dom": "18.1.0"
   },
   "devDependencies": {
+    "@playwright/test": "1.22.2",
     "autoprefixer": "10.4.7",
     "eslint": "8.17.0",
     "eslint-config-next": "12.1.6",
