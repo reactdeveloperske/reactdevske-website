@@ -20,7 +20,7 @@ const Navbar = () => {
               </Link>
               <Link href={"/#members"}>
                 <a>
-                  <li>Memberss</li>
+                  <li>Members</li>
                 </a>
               </Link>
               <Link href={"/#events"}>
@@ -46,7 +46,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div>
-            <button class="flex mx-auto bg-gray-300 border-0 py-[10px] px-[33px] focus:outline-none hover:bg-gray-600 hover:text-white rounded text-lg">
+            <button className="flex mx-auto bg-gray-300 border-0 py-[10px] px-[33px] focus:outline-none hover:bg-gray-600 hover:text-white rounded text-lg">
               Join Community
             </button>
           </div>
