@@ -1,6 +1,14 @@
 import Link from "next/link";
 import React from "react";
-import { ABOUT, CONTACT, EVENTS, FORUM, HOME, MEMBERS, NEWS } from "../util/routeConstants";
+import {
+  ABOUT,
+  CONTACT,
+  EVENTS,
+  FORUM,
+  HOME,
+  MEMBERS,
+  NEWS,
+} from "../util/routeConstants";
 
 const Navbar = () => {
   return (
@@ -9,7 +17,9 @@ const Navbar = () => {
         <nav className="nav py-4 flex justify-between items-center">
           <div>
             <Link href={HOME}>
-              <div className="bg-gray-400 w-[137px] h-[61px]"></div>
+              <a>
+                <div className="bg-gray-400 w-[137px] h-[61px]"></div>
+              </a>
             </Link>
           </div>
           <div className="">
