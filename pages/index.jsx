@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 // import styles from '../styles/Home.module.css'
 import logo from "../public/reactdevske.svg";
-
+import pana from   '../public/pana.svg'
 export default function Home() {
   return (
     <div className="">
@@ -20,25 +20,37 @@ export default function Home() {
         />
       </Head>
 
-      <main className="">
-        <h1 className="text-center text-3xl text-white font-bold font-montserrat">
-          React Developer Community Kenya
-        </h1>
-        <p className="text-center text-xl text-white font-montserrat">
-          A Community of Reactjs developers in Kenya
-        </p>
+      <main className="main-cont">
+        
         <div className="flex flex-col justify-center content-center">
-          <Image
-            src={logo}
-            className="App-logo"
-            alt="logo"
-            width={400}
-            height={400}
-          />
-          <p className="flex justify-center text-white pt-10">
-            🚧Under construction...
-          </p>
+            <Image
+              src={pana}
+              className="App-logo"
+              alt="logo"
+              width={400}
+              height={400}
+            />
         </div>
+
+          <div className="text-center text-white font-montserrat">
+              <h1 className=" text-3xl  font-bold ">
+                  Website Under Development <br />
+                </h1>
+                <p> we've got something cooking ,we'll be online soon</p> 
+                <br />
+                <p className="text-xl">
+                   Join our Community of Reactjs developers in Kenya.
+                </p>
+          </div>
+
+          
+            <a target="_blank" href="https://bit.ly/joinreactdevske" rel="noopener noreferrer" className="flex  justify-center content-center btn-cont m-5">
+                <button className="text-green-500 font-semibold bg-white px-5 py-4 rounded hover:bg-green-500 hover:text-white">
+                    Join Community
+                  </button>
+            </a>
+          
+
       </main>
     </div>
   );
