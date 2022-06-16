@@ -20,23 +20,23 @@ export default function Home() {
         />
       </Head>
 
-      <main className="">
-        <h1 className="text-center text-3xl text-white font-bold font-montserrat">
-          React Developer Community Kenya
+      <main className="pt-10">
+        <h1 className="text-center text-3xl  text-white font-bold font-montserrat">
+          React Developer Community Kenya 🇰🇪
         </h1>
         <p className="text-center text-xl text-white font-montserrat">
-          A Community of Reactjs developers in Kenya
+          A Community of Reactjs developers in Kenya 
         </p>
-        <div className="flex flex-col justify-center content-center">
+        <div className="flex flex-col mt-4 justify-center content-center">
           <Image
             src={logo}
             className="App-logo"
             alt="logo"
-            width={400}
-            height={400}
+            width={300}
+            height={300}
           />
-          <p className="flex justify-center text-white pt-10">
-            🚧Under construction...
+          <p className="flex justify-center lg:mt-auto text-white pt-10">
+            <span className="animate-bounce pr-3"> 🚧 </span> Under construction...  <span className="animate-spin ml-3"> ⚙️</span>
           </p>
         </div>
       </main>
