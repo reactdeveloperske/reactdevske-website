@@ -1,5 +1,7 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import logo from "../public/reactdevske.svg";
 import {
   ABOUT,
   CONTACT,
@@ -18,7 +20,7 @@ const Navbar = () => {
           <div>
             <Link href={HOME}>
               <a>
-                <div className="bg-gray-400 w-[137px] h-[61px]"></div>
+              <Image src={logo} alt="reactdevske logo" width={137} height={60} />
               </a>
             </Link>
           </div>
@@ -57,9 +59,11 @@ const Navbar = () => {
             </ul>
           </div>
           <div>
+          <a target="_blank" href="https://bit.ly/joinreactdevske" rel="noopener noreferrer">
             <button className="flex mx-auto bg-gray-300 border-0 py-[10px] px-[33px] focus:outline-none hover:bg-gray-600 hover:text-white rounded text-lg">
               Join Community
             </button>
+            </a>
           </div>
         </nav>
       </header>
