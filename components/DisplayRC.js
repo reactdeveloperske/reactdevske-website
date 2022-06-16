@@ -6,7 +6,7 @@ function cn(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function ImageRC({
+export default function DislpayRC({
   name,
   src,
   event,

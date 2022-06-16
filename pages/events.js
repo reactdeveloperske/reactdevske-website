@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageRC from '../components/ImageRC';
+import DisplayRC from '../components/DisplayRC';
 import logo from '../public/reactdevske.svg'
 
 export const getStaticProps = async () => {
@@ -26,7 +26,7 @@ export default function Events({data}){
             <p className='text-lg'> We organise several events for the community.</p>
             <div className='grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 md:grid-cols-2'>
               {data.map((event,index)=>(
-                  <ImageRC key={index} name={event.name} src={event.src} event={event.event} description={event.description} venue={event.venue} date={event.date}/>
+                  <DisplayRC key={index} name={event.name} src={event.src} event={event.event} description={event.description} venue={event.venue} date={event.date}/>
               ))}
             </div>
         </div>
