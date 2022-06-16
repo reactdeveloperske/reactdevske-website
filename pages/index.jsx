@@ -45,7 +45,7 @@ export default function Home() {
 
           
             <a target="_blank" href="https://bit.ly/joinreactdevske" rel="noopener noreferrer" className="flex  justify-center content-center btn-cont m-5">
-                <button className="text-green-500 font-semibold bg-white px-5 py-4 rounded hover:bg-green-500 hover:text-white">
+                <button className="text-white font-semibold bg-green-500 px-5 py-4 rounded hover:bg-white hover:text-green-500">
                     Join Community
                   </button>
             </a>
