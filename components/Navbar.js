@@ -13,32 +13,32 @@ const Navbar = () => {
           </div>
           <div className="">
             <ul className="flex items-center space-x-[37px]">
-              <Link href={"/#about"}>
+              <Link href={"/about"}>
                 <a>
                   <li>About us</li>
                 </a>
               </Link>
-              <Link href={"/#members"}>
+              <Link href={"/members"}>
                 <a>
                   <li>Members</li>
                 </a>
               </Link>
-              <Link href={"/#events"}>
+              <Link href={"/events"}>
                 <a>
                   <li>Events</li>
                 </a>
               </Link>
-              <Link href={"/#news"}>
+              <Link href={"/news"}>
                 <a>
                   <li>News</li>
                 </a>
               </Link>
-              <Link href={"/#forum"}>
+              <Link href={"/forum"}>
                 <a>
                   <li>Forum</li>
                 </a>
               </Link>
-              <Link href={"/#contact"}>
+              <Link href={"/contact"}>
                 <a>
                   <li>Contact</li>
                 </a>
