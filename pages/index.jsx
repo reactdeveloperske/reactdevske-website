@@ -36,7 +36,7 @@ export default function Home() {
               <h1 className=" text-3xl  font-bold ">
                   Website Under Development <br />
                 </h1>
-                <p> we've got something cooking ,we'll be online soon.</p> 
+                <p> we've got something cooking, we'll be online soon.</p> 
                 <br />
                 <p className="text-xl">
                    Join our Community of Reactjs developers in Kenya.
