@@ -21,6 +21,7 @@ const Navbar = () => {
            <Link href={HOME}>
               <a>
               <Image src={logo} alt="reactdevske logo" width={137} height={60} />
+              </a>
             </Link>
           </div>
           <div className="">
