@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-
-// helper function used in the Image component
-function cn(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+import {booleanFilter} from '../util/booleanFilter';
 
 export default function DislpayRC({
   name,
@@ -23,7 +19,7 @@ export default function DislpayRC({
           src={!src ? "https://bit.ly/placeholder-img" : src}
           layout="fill"
           objectFit="cover"
-          className={cn(
+          className={booleanFilter(
             "duration-700 ease-in-out group-hover:opacity-75",
             loading
               ? "scale-110 blur-2xl grayscale"
