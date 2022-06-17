@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Banner from "../components/Banner";
 import Image from "next/image";
 // import styles from '../styles/Home.module.css'
 import logo from "../public/reactdevske.svg";
@@ -6,7 +7,9 @@ import logo from "../public/reactdevske.svg";
 export default function Home() {
   return (
     <div className="">
+      
       <Head>
+      <Banner />
         <title>React Devs Kenya</title>
         <meta
           name="description"

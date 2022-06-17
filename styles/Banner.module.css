@@ -1,0 +1,20 @@
+.module {
+    background: white;
+}
+
+.module>h2 {
+    padding: 1rem;
+}
+
+.stripe {
+    background: repeating-linear-gradient(-55deg, #222, rgb(34, 34, 34) 10px, rgb(229, 194, 0) 10px, rgb(229, 194, 0) 20px);
+}
+
+.text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5vw;
+    color: #222;
+    background-color: rgb(229, 194, 0);
+}
