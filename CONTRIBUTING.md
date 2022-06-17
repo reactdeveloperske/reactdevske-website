@@ -11,7 +11,7 @@ Please note we have a [code of conduct](https://github.com/reactdeveloperske/rea
   
 ### Open issues
 - Go to [open issues](https://github.com/reactdeveloperske/reactdevske-website/issues)
-- select issue of your choice that is `open` or `need help` and is not assigned.
+- select an issue of your choice that is `open` or `need help` or is `up-for-grabs` and is not assigned.
 - Comment on the issue (if you'd like to be assigned to it) - that way the issue can be assigned to you.
   
 
@@ -112,7 +112,7 @@ $ git commit -m "brief description of changes [Fixes #1234]"
 $ git push
 ```
 
-### Submit your PR 🚀
+### Submit your Pull Request (PR)🚀
 
 - After your changes are commited to your GitHub fork, submit a pull request (PR) to the `develop` branch of the `reactdeveloperske/reactdevske-website` repo
 - In your PR description, reference the issue it resolves (see [linking a pull request to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword))

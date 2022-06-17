@@ -107,23 +107,11 @@
   height: 1em;
   margin-left: 0.5rem;
   }
-  
-  .App-logo {
-    animation: spin 1s linear infinite;
-}
+
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
-  }
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
   }
 }
