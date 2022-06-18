@@ -9,7 +9,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: #333333;
+  background-color: #333333;
 }
 
 a {
@@ -20,3 +20,28 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* styles for top under construction banner start here*/
+
+.banner {
+  background: white;
+}
+
+.banner>div {
+  padding: 1rem;
+}
+
+.stripe {
+  background: repeating-linear-gradient(-55deg, #222, rgb(34, 34, 34) 10px, rgb(229, 194, 0) 10px, rgb(229, 194, 0) 20px);
+}
+
+.text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-weight: bolder;
+  color: #222;
+  font-size: clamp(1rem, 1vw, 2rem);
+  background-color: rgb(229, 194, 0);
+}
+
+/* styles for top under construction banner end here*/
