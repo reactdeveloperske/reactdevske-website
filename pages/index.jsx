@@ -25,7 +25,7 @@ export default function Home() {
           React Developer Community Kenya
         </h1>
         <p className="text-center text-xl text-white font-montserrat">
-          A Community of Reactjs developers in Kenya
+          A Community of Reactjs developers in Kenya 
         </p>
         <div className="flex flex-col justify-center content-center">
           <Image

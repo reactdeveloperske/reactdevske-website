@@ -18,7 +18,7 @@ const Navbar = () => {
       <header className="px-[181px] w-full shadow-md bg-white">
         <nav className="nav py-4 flex justify-between items-center">
           <div>
-            <Link href={HOME}>
+           <Link href={HOME}>
               <a>
               <Image src={logo} alt="reactdevske logo" width={137} height={60} />
               </a>
