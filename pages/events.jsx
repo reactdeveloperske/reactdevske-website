@@ -24,7 +24,7 @@ export default function Events({data}){
     return(
       <div>
         <Head>
-        <title>React Devs Kenya - Forum</title>
+        <title>Reactjs Developer Community in Kenya - Forum</title>
         </Head>
         <div className='bg-white flex flex-col w-full gap-y-5 px-16 py-6 justify-center items-center'>
             <h2 className='text-2xl font-bold'>Community Events</h2>

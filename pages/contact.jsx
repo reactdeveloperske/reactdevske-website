@@ -5,7 +5,7 @@ export default function ContactPage() {
   return (
     <>
       <Head>
-        <title>React Devs Kenya - Contact</title>
+        <title>Reactjs Developer Community in Kenya - Contact</title>
       </Head>
       <main className="flex justify-center items-center min-h-screen">
         <h1 className="text-white">Contact page will be here</h1>

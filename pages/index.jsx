@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>React Devs Kenya</title>
+        <title>Reactjs Developer Community in Kenya</title>
         <meta
           name="description"
           content="React js Developer Community Kenya is a community of react js developers using react related technologies in the Kenyan software development eco system."
