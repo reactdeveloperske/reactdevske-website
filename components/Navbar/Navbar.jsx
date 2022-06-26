@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../public/reactdevske.svg";
+import logo from "../../public/reactdevske.svg";
 import {
   ABOUT,
   CONTACT,
@@ -10,13 +10,13 @@ import {
   HOME,
   MEMBERS,
   NEWS,
-} from "../util/routeConstants";
+} from "../../util/routeConstants";
 
 const Navbar = () => {
   return (
     <>
       <header className="px-[181px] w-full shadow-md bg-white">
-        <nav className="nav py-4 flex justify-between items-center">
+        <nav className="nav py-4 flex flex-col lg:flex-row justify-between items-center">
           <div>
            <Link href={HOME}>
               <a>
@@ -25,7 +25,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="">
-            <ul className="flex items-center space-x-[37px]">
+            <ul className="flex flex-col lg:flex-row justify-center items-center lg:space-x-[30px]">
               <Link href={ABOUT}>
                 <a>
                   <li>About us</li>
