@@ -5,7 +5,7 @@ export default function NewsPage() {
   return (
     <>
       <Head>
-        <title>React Devs Kenya - News</title>
+        <title>Reactjs Developer Community in Kenya - News</title>
       </Head>
       <main className="flex justify-center items-center min-h-screen">
         <h1 className="text-white">News page will be here</h1>

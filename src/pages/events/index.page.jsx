@@ -1,6 +1,6 @@
 import React from 'react';
-import DisplayRC from '../components/DisplayRC';
-import logo from '../public/reactdevske.svg'
+import DisplayRC from '../../components/EventsDisplay';
+import logo from '../../../public/reactdevske.svg';
 import Head from 'next/head';
 
 export const getStaticProps = async () => {
@@ -24,7 +24,7 @@ export default function Events({data}){
     return(
       <div>
         <Head>
-        <title>React Devs Kenya - Forum</title>
+        <title>Reactjs Developer Community in Kenya - Forum</title>
         </Head>
         <div className='bg-white flex flex-col w-full gap-y-5 px-16 py-6 justify-center items-center'>
             <h2 className='text-2xl font-bold'>Community Events</h2>

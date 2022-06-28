@@ -8,6 +8,6 @@ test.beforeEach(async ({ page }) => {
 test.describe('Basic test', () => {
     test('should show the title', async ({ page }) => {
         const title = page.locator('title');
-        await expect(title).toHaveText('React Devs Kenya');
+        await expect(title).toHaveText('Reactjs Developer Community in Kenya');
       });
 });

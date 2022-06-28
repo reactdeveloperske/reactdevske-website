@@ -1,13 +1,13 @@
 import Head from "next/head";
 import Banner from "../components/Banner";
 import Image from "next/image";
-import logo from "../public/reactdevske.svg";
+import logo from "../../public/reactdevske.svg";
 
 export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>React Devs Kenya</title>
+        <title>Reactjs Developer Community in Kenya</title>
         <meta
           name="description"
           content="React js Developer Community Kenya is a community of react js developers using react related technologies in the Kenyan software development eco system."
@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
 
       <main className="">
-        <h1 className="text-center text-3xl text-white font-bold font-montserrat">
+        <h1 className="text-center pt-6 text-3xl text-white font-bold font-montserrat">
           React Developer Community Kenya
         </h1>
         <p className="text-center text-xl text-white font-montserrat">

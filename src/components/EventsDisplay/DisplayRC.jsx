@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import {booleanFilter} from '../util/booleanFilter';
+import { booleanFilter } from '../../util/booleanFilter';
 
 export default function DislpayRC({
   name,

@@ -1,6 +1,6 @@
-import Navbar from "../components/Navbar.jsx";
+import Navbar from "../components/Navbar";
 import "../styles/globals.css";
-import Banner from "../components/Banner.jsx";
+import Banner from "../components/Banner";
 
 function MyApp({ Component, pageProps }) {
   return (

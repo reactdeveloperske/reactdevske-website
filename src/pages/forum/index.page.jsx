@@ -1,14 +1,14 @@
 import React from "react";
 import Head from "next/head";
 
-export default function MembersPage() {
+export default function ForumPage() {
   return (
     <>
       <Head>
-        <title>React Devs Kenya - About</title>
+        <title>Reactjs Developer Community in Kenya - Forum</title>
       </Head>
       <main className="flex justify-center items-center min-h-screen">
-        <h1 className="text-white">Members page will be here</h1>
+        <h1 className="text-white">Forum page will be here</h1>
       </main>
     </>
   );
