@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Banner from "../components/Banner";
 import Hero from "../components/Home/Hero";
+import About from "../components/Home/About";
 import Image from "next/image";
 import logo from "../../public/reactdevske.svg";
 
@@ -22,7 +23,8 @@ export default function Home() {
       </Head>
 
       <main className="bg-white">
-        <Hero />        
+        <Hero />
+        <About />        
       </main>
     </div>
   );
