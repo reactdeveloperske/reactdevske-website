@@ -4,6 +4,7 @@ import Hero from "../components/Home/Hero";
 import About from "../components/Home/About";
 import Mission from "../components/Home/Mission";
 import Founders from "../components/Home/Founders";
+import Members from "../components/Home/Members";
 import Image from "next/image";
 import logo from "../../public/reactdevske.svg";
 
@@ -28,7 +29,8 @@ export default function Home() {
         <Hero />
         <About />
         <Mission />
-        <Founders />        
+        <Founders />
+        <Members />        
       </main>
     </div>
   );
