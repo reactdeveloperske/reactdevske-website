@@ -5,7 +5,7 @@ import Banner from "../components/Banner";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Banner />
+      {/* <Banner /> */}
       <Navbar />
       <Component {...pageProps} />
     </>

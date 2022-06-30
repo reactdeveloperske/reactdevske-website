@@ -21,7 +21,7 @@ export default function Home() {
         />
       </Head>
 
-      <main className="">
+      <main className="bg-white">
         <Hero />        
       </main>
     </div>
