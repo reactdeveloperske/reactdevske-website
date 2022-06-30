@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import Hero from "../components/Home/Hero";
 import About from "../components/Home/About";
 import Mission from "../components/Home/Mission";
+import Founders from "../components/Home/Founders";
 import Image from "next/image";
 import logo from "../../public/reactdevske.svg";
 
@@ -26,7 +27,8 @@ export default function Home() {
       <main className="bg-white">
         <Hero />
         <About />
-        <Mission />        
+        <Mission />
+        <Founders />        
       </main>
     </div>
   );
