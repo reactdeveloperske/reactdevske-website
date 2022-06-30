@@ -6,6 +6,7 @@ import Mission from "../components/Home/Mission";
 import Founders from "../components/Home/Founders";
 import Members from "../components/Home/Members";
 import Events from "../components/Home/Events";
+import Forum from "../components/Home/Forum";
 import Image from "next/image";
 import logo from "../../public/reactdevske.svg";
 
@@ -32,7 +33,8 @@ export default function Home() {
         <Mission />
         <Founders />
         <Members />        
-        <Events />        
+        <Events />
+        <Forum />        
       </main>
     </div>
   );
