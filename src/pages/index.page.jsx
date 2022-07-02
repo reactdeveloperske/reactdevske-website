@@ -8,6 +8,7 @@ import Members from "../components/Home/Members";
 import Events from "../components/Home/Events";
 import Forum from "../components/Home/Forum";
 import Contact from "../components/Home/Contact";
+import Footer from "../components/Home/Footer";
 import Image from "next/image";
 import logo from "../../public/reactdevske.svg";
 
@@ -37,6 +38,7 @@ export default function Home() {
         <Events />
         <Forum />
         <Contact />        
+        <Footer />        
       </main>
     </div>
   );
