@@ -1,5 +1,5 @@
 import React from 'react';
-import DisplayRC from '../../components/EventsDisplay';
+import DisplayRC from '../../components/Display'
 import logo from '../../../public/reactdevske.svg';
 import Head from 'next/head';
 
