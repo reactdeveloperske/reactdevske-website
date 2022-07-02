@@ -21,6 +21,7 @@ module.exports = {
       'green': '#09C65C',
       'light-green': 'rgba(222, 248, 233, 0.72);',
       'text-gray': '#3A3A3A',
+      'text-black': 'rgba(0, 0, 0, 0.44)',
       'hero-overlay': 'rgba(217, 217, 217, 0.22);'
     },
     extend: {
@@ -33,5 +34,8 @@ module.exports = {
   corePlugins: {
     aspectRatio: false,
   },
-  plugins: [require('@tailwindcss/aspect-ratio'),],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'), 
+    require('@tailwindcss/forms')
+  ],
 }
