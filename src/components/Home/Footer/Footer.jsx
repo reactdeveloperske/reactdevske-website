@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from "next/image";
+import Link from "next/link";
 import logo from "../../../../public/footerLogo.png";
+import { CONTACT, PRIVACYPOLICY } from '../../../util/routeConstants';
 
 const Footer = () => {
   return (
@@ -9,9 +11,15 @@ const Footer = () => {
         <Image src={logo} width={137} height={137}/>
       </div>      
       <div className='flex my-[30px] align-center justify-center'>
-        <span className='font-montserrat text-bd-rg mx-[64px]'>Join ReactdevsKe</span>        
-        <span className='font-montserrat text-bd-rg mx-[64px]'>Contact us</span>        
-        <span className='font-montserrat text-bd-rg mx-[64px]'>Privacy Policy</span>        
+        <Link href="https://bit.ly/joinreactdevske">
+          <span className='font-montserrat text-bd-rg mx-[64px] cursor-pointer'>Join Reactdevske</span>
+        </Link>
+        <Link href={CONTACT}>
+          <span className='font-montserrat text-bd-rg mx-[64px] cursor-pointer'>Contact us</span>
+        </Link>        
+        <Link href={PRIVACYPOLICY}>
+          <span className='font-montserrat text-bd-rg mx-[64px] cursor-pointer'>Privacy policy</span>
+        </Link>
       </div>      
     </div>
   )
