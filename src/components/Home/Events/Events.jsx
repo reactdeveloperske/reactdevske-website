@@ -1,7 +1,15 @@
-import React from 'react'
+import { useState } from 'react';
 import EventsCard from '../EventsCard';
 
-const Events = () => {
+const eventsPerView = 6;
+
+const Events = ({eventsData}) => {
+  const [next, setNext] = useState(eventsPerView);
+
+  const seeMore = () => {
+    setNext(next + eventsPerView);
+  };
+
   return (
     <div>
         <div className='mt-[64px]'>
@@ -10,18 +18,33 @@ const Events = () => {
         </div>
 
         <div className='bg-green'>
-          <div className='flex flex-col align-center mx-[184px]'>
-            <div className='text-right mt-[25px] mb-[48px]'>
-              <h4 className='font-montserrat text-h4 text-white font-bold'>See more</h4>
+          <div className='flex flex-col align-center py-[48px] mx-[184px]'>
+            <div className='grid gap-x-20 gap-y-14 grid-cols-3'>
+              {
+                eventsData?.slice(0, next)?.map(
+                  (event, index) => (
+                    <EventsCard
+                      key={index}
+                      src={event.src} 
+                      title={event.title}
+                      venue={event.venue}
+                      date={event.date}
+                    />
+                  )
+                )
+              }
             </div>
-            <div className='grid gap-x-20 gap-y-14 grid-cols-3 mb-[80px]'>
-              <EventsCard />
-              <EventsCard />
-              <EventsCard />
-              <EventsCard />
-              <EventsCard />
-              <EventsCard />
-            </div>
+
+            { next < eventsData?.length &&
+              (<div className='text-right my-[48px]'>
+                <input 
+                  type="button" 
+                  value="See more"
+                  onClick={seeMore} 
+                  className='cursor-pointer font-montserrat text-h4 text-white font-bold'
+                />
+              </div>)
+            }
           </div>
         </div>
     </div>
