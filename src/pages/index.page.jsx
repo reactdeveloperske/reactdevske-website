@@ -50,32 +50,35 @@ export default function Home({mockData}) {
 }
 
 export const getStaticProps = async () => {
-  const imageSrc = "https://picsum.photos/265/176";
+  const imageSrc1 = "https://loremflickr.com/265/176/city?random=2";
+  const imageSrc2 = "https://loremflickr.com/265/176/city?random=1";
+  const imageSrc3 = "https://loremflickr.com/265/176/city?random=3";
+
   const mockData = [
-    {title:"Weekly Standup", src:`${imageSrc}`, venue:"iHub", date:"2022-06-15"},
-    {title:"2nd Bi-Annual Party", src:`${imageSrc}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
-    {title:"Junior Devs Mentorship", src:`${imageSrc}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
-    {title:"React Devs Networking", src:`${imageSrc}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
-    {title:"React Hackathon", src:`${imageSrc}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
-    {title:"Ask Me Anything", src:`${imageSrc}`, description:"React js Developer Community Kenya is a community of react js developers using react related technologies in the Kenyan software development eco system.",venue:"iHub",date:"2022-06-15"},
-    {title:"Weekly Standup", src:`${imageSrc}`, venue:"iHub", date:"2022-06-15"},
-    {title:"2nd Bi-Annual Party", src:`${imageSrc}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
-    {title:"Junior Devs Mentorship", src:`${imageSrc}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
-    {title:"React Devs Networking", src:`${imageSrc}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
-    {title:"React Hackathon", src:`${imageSrc}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
-    {title:"Ask Me Anything", src:`${imageSrc}`, description:"React js Developer Community Kenya is a community of react js developers using react related technologies in the Kenyan software development eco system.",venue:"iHub",date:"2022-06-15"},
-    {title:"Junior Devs Mentorship", src:`${imageSrc}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
-    {title:"React Devs Networking", src:`${imageSrc}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
-    {title:"React Hackathon", src:`${imageSrc}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
-    {title:"Ask Me Anything", src:`${imageSrc}`, description:"React js Developer Community Kenya is a community of react js developers using react related technologies in the Kenyan software development eco system.",venue:"iHub",date:"2022-06-15"},
-    {title:"Junior Devs Mentorship", src:`${imageSrc}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
-    {title:"React Devs Networking", src:`${imageSrc}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
-    {title:"React Hackathon", src:`${imageSrc}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
-    {title:"Ask Me Anything", src:`${imageSrc}`, description:"React js Developer Community Kenya is a community of react js developers using react related technologies in the Kenyan software development eco system.",venue:"iHub",date:"2022-06-15"},
-    {title:"Junior Devs Mentorship", src:`${imageSrc}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
-    {title:"React Devs Networking", src:`${imageSrc}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
-    {title:"React Hackathon", src:`${imageSrc}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
-    {title:"Ask Me Anything", src:`${imageSrc}`, description:"React js Developer Community Kenya is a community of react js developers using react related technologies in the Kenyan software development eco system.",venue:"iHub",date:"2022-06-15"},
+    {title:"Weekly Standup", src:`${imageSrc1}`, venue:"iHub", date:"2022-06-15"},
+    {title:"2nd Bi-Annual Party", src:`${imageSrc2}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
+    {title:"Junior Devs Mentorship", src:`${imageSrc1}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
+    {title:"React Devs Networking", src:`${imageSrc1}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
+    {title:"React Hackathon", src:`${imageSrc3}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
+    {title:"Ask Me Anything", src:`${imageSrc2}`, description:"React js Developer Community Kenya is a community of react js developers using react related technologies in the Kenyan software development eco system.",venue:"iHub",date:"2022-06-15"},
+    {title:"Weekly Standup", src:`${imageSrc1}`, venue:"iHub", date:"2022-06-15"},
+    {title:"2nd Bi-Annual Party", src:`${imageSrc3}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
+    {title:"Junior Devs Mentorship", src:`${imageSrc2}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
+    {title:"React Devs Networking", src:`${imageSrc1}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
+    {title:"React Hackathon", src:`${imageSrc2}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
+    {title:"Ask Me Anything", src:`${imageSrc1}`, description:"React js Developer Community Kenya is a community of react js developers using react related technologies in the Kenyan software development eco system.",venue:"iHub",date:"2022-06-15"},
+    {title:"Junior Devs Mentorship", src:`${imageSrc2}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
+    {title:"React Devs Networking", src:`${imageSrc3}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
+    {title:"React Hackathon", src:`${imageSrc1}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
+    {title:"Ask Me Anything", src:`${imageSrc2}`, description:"React js Developer Community Kenya is a community of react js developers using react related technologies in the Kenyan software development eco system.",venue:"iHub",date:"2022-06-15"},
+    {title:"Junior Devs Mentorship", src:`${imageSrc3}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
+    {title:"React Devs Networking", src:`${imageSrc2}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
+    {title:"React Hackathon", src:`${imageSrc1}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
+    {title:"Ask Me Anything", src:`${imageSrc3}`, description:"React js Developer Community Kenya is a community of react js developers using react related technologies in the Kenyan software development eco system.",venue:"iHub",date:"2022-06-15"},
+    {title:"Junior Devs Mentorship", src:`${imageSrc3}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
+    {title:"React Devs Networking", src:`${imageSrc2}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
+    {title:"React Hackathon", src:`${imageSrc2}`, description:"This is a description for event 1",venue:"iHub",date:"2022-06-15"},
+    {title:"Ask Me Anything", src:`${imageSrc1}`, description:"React js Developer Community Kenya is a community of react js developers using react related technologies in the Kenyan software development eco system.",venue:"iHub",date:"2022-06-15"},
   ];
   return{
       props:{
