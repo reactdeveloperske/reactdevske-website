@@ -1,38 +1,38 @@
 import React from "react";
 
-export const Input = (props) => {
+export const Input = ({name, label, type, placeholder, value, onChange}) => {
   return (
     <div>
       <fieldset className="flex flex-col mt-[19px]">
-        <label className="text-text-black text-bdy-sm" for={props.name}>
-          {props.label}
+        <label className="text-text-black text-bdy-sm" htmlFor={name}>
+          {label}
         </label>
         <input
-          type={props.type}
+          type={type}
           className="form-input border-transparent focus:border-transparent focus:border-[1px] focus:border-green focus:ring-0 rounded-lg text-text-black py-[12px] pl-[16px] mt-[8px]"
-          placeholder={props.placeholder}
-          name={props.name}
-          value={props.value}
-          onChange={props.onChange}
+          placeholder={placeholder}
+          name={name}
+          value={value}
+          onChange={onChange}
         />
       </fieldset>
     </div>
   );
 };
 
-export const TextArea = (props) => {
+export const TextArea = ({name, label, type, placeholder, value, onChange}) => {
   return (
     <div>
       <fieldset className="flex flex-col mt-[19px]">
-        <label className="text-text-black text-bdy-sm" for={props.name}>
-          {props.label}
+        <label className="text-text-black text-bdy-sm" htmlFor={name}>
+          {label}
         </label>
         <textarea
-          placeholder={props.placeholder}
+          placeholder={placeholder}
           className="form-input border-transparent focus:border-transparent focus:border-[1px] focus:border-green focus:ring-0 rounded-lg text-text-black text-bd-lg resize-none h-[178px] py-[22px] pl-[16px] mt-[8px]"
-          name={props.name}
-          value={props.value}
-          onChange={props.onChange}
+          name={name}
+          value={value}
+          onChange={onChange}
         />
       </fieldset>
     </div>
