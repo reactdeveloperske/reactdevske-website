@@ -6,7 +6,7 @@ const nextConfig = {
     dirs: ['src','e2e'],
   },
   images:{
-    domains:['bit.ly']
+    domains:['bit.ly', 'loremflickr.com']
   }
 }
 
