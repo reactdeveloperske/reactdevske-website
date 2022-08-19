@@ -35,4 +35,6 @@ yarn-error.log*
 yarn.lock
 
 #eslint
-.eslintrc.json
+/test-results/
+/playwright-report/
+/playwright/.cache/
