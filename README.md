@@ -5,11 +5,9 @@
 
 This is the repo for the showcase website of the React Developer Community in Kenya
 
-
 Check out the live version [HERE](https://reactdevske.vercel.app/)
 
 ## Contributing to the project
-
 
 Contributions are always welcome!
 

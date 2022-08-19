@@ -1,1 +1,1 @@
-export  {default}  from './DisplayRC';
+export { default } from './DisplayRC';

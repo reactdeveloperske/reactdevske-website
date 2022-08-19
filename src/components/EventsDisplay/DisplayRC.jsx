@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Image from "next/image";
+import React, { useState } from 'react';
+import Image from 'next/image';
 import { booleanFilter } from '../../util/booleanFilter';
 
 export default function DislpayRC({
@@ -16,14 +16,14 @@ export default function DislpayRC({
       <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg">
         <Image
           alt=" "
-          src={!src ? "https://bit.ly/placeholder-img" : src}
+          src={!src ? 'https://bit.ly/placeholder-img' : src}
           layout="fill"
           objectFit="cover"
           className={booleanFilter(
-            "duration-700 ease-in-out group-hover:opacity-75",
+            'duration-700 ease-in-out group-hover:opacity-75',
             loading
-              ? "scale-110 blur-2xl grayscale"
-              : "scale-100 blur-0 grayscale-0"
+              ? 'scale-110 blur-2xl grayscale'
+              : 'scale-100 blur-0 grayscale-0'
           )}
           onLoadingComplete={() => setLoading(false)}
         />
