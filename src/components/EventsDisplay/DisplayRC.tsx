@@ -2,14 +2,23 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { booleanFilter } from '../../util/booleanFilter';
 
-export default function DislpayRC({
+type DisplayRCProps = {
+  name: string;
+  src: string;
+  event: boolean;
+  description: string;
+  venue: string;
+  date: string;
+};
+
+export default function DisplayRC({
   name,
   src,
   event,
   description,
   venue,
   date,
-}) {
+}: DisplayRCProps) {
   const [loading, setLoading] = useState(true);
   return (
     <div className="bg-white flex flex-col rounded-lg px-6 py-4 gap-y-2 shadow-md">
