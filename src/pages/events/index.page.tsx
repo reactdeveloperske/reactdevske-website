@@ -3,15 +3,7 @@ import DisplayRC from '../../components/EventsDisplay';
 import logo from '../../../public/reactdevske.svg';
 import Head from 'next/head';
 import type { GetStaticProps } from 'next';
-
-type EventData = {
-  name: string;
-  src: string;
-  event: boolean;
-  description: string;
-  venue: string;
-  date: string;
-};
+import type { EventData } from '../../types';
 
 type EventsProps = {
   data: Array<EventData>;

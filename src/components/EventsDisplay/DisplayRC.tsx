@@ -1,15 +1,9 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { booleanFilter } from '../../util/booleanFilter';
+import type { EventData } from '../../types';
 
-type DisplayRCProps = {
-  name: string;
-  src: string;
-  event: boolean;
-  description: string;
-  venue: string;
-  date: string;
-};
+type DisplayRCProps = EventData;
 
 export default function DisplayRC({
   name,
