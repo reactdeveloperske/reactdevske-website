@@ -38,16 +38,15 @@ export default function Home() {
             🚧Under construction...
           </p>
           <a
-              target="_blank"
-              href="https://github.com/reactdeveloperske/reactdevske-website"
-              rel="noopener noreferrer"
-              className='pt-5 pb-5'
-            >
-              <button className="flex mx-auto bg-gray-300 border-0 py-[10px] px-[33px] focus:outline-none hover:bg-gray-600 hover:text-white rounded text-lg">
-                Contribute on GitHub
-              </button>
-            </a>
-
+            target="_blank"
+            href="https://github.com/reactdeveloperske/reactdevske-website"
+            rel="noopener noreferrer"
+            className="pt-5 pb-5"
+          >
+            <button className="flex mx-auto bg-gray-300 border-0 py-[10px] px-[33px] focus:outline-none hover:bg-gray-600 hover:text-white rounded text-lg">
+              Contribute on GitHub
+            </button>
+          </a>
         </div>
       </main>
     </div>

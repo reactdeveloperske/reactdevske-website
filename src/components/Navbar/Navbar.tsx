@@ -12,7 +12,7 @@ import {
   NEWS,
 } from '../../util/routeConstants';
 
-const Navbar = () => {
+export default function Navbar() {
   return (
     <>
       <header className="px-[181px] w-full shadow-md bg-white">
@@ -78,6 +78,4 @@ const Navbar = () => {
       </header>
     </>
   );
-};
-
-export default Navbar;
+}

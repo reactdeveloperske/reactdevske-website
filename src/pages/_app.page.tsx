@@ -1,8 +1,9 @@
 import Navbar from '../components/Navbar';
 import '../styles/globals.css';
 import Banner from '../components/Banner';
+import type { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Banner />
@@ -11,5 +12,3 @@ function MyApp({ Component, pageProps }) {
     </>
   );
 }
-
-export default MyApp;
