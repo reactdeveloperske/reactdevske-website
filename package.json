@@ -8,9 +8,10 @@
     "start": "next start",
     "lint": "next lint --report-unused-disable-directives error",
     "test": "playwright test",
-    "prettier": "prettier --write --ignore-path .gitignore .",
+    "prettier:format": "prettier --write --ignore-path .gitignore .",
+    "prettier:check": "prettier --check --ignore-path .gitignore .",
     "typecheck": "tsc --build",
-    "compile": "npm run prettier && npm run lint && npm run typecheck && npm run build"
+    "validate": "concurrently --kill-others-on-fail -g -p \"[{name}]\" -n \"prettier,lint,typecheck,build\" \"npm:prettier:check -s\" \"npm:lint -s\" \"npm:typecheck -s\" \"npm:build -s -- --no-lint\""
   },
   "dependencies": {
     "next": "12.3.1",
@@ -19,16 +20,17 @@
   },
   "devDependencies": {
     "@playwright/test": "1.22.2",
-    "@tailwindcss/aspect-ratio": "0.4.0",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
     "@types/react": "18.0.21",
-    "@typescript-eslint/eslint-plugin": "5.38.1",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
     "autoprefixer": "10.4.7",
+    "concurrently": "^7.4.0",
     "eslint": "8.17.0",
     "eslint-config-next": "12.1.6",
-    "eslint-config-prettier": "8.5.0",
+    "eslint-config-prettier": "^8.5.0",
     "postcss": "8.4.14",
-    "prettier": "2.7.1",
+    "prettier": "^2.7.1",
     "tailwindcss": "3.1.2",
-    "typescript": "4.8.4"
+    "typescript": "^4.8.4"
   }
 }
