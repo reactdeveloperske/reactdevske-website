@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [main, develop]
 jobs:
-  compile:
+  e2e:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
