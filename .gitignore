@@ -31,10 +31,14 @@ yarn-error.log*
 # vercel
 .vercel
 
+#npm
+package-lock.json
+
 #yarn
 yarn.lock
 
 #eslint
+/.eslintcache
 /test-results/
 /playwright-report/
 /playwright/.cache/

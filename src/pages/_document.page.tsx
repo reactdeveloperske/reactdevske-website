@@ -65,6 +65,10 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap"
             rel="stylesheet"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />

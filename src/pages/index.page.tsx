@@ -20,8 +20,8 @@ export default function Home() {
       </Head>
 
       <main className="">
-        <h1 className="text-center pt-6 text-3xl text-white font-bold font-montserrat">
-          React Developer Community Kenya
+        <h1 className="text-center pt-6 text-3xl text-white font-bold font-roboto">
+          React Developer Community Kenya is here
         </h1>
         <p className="text-center text-xl text-white font-montserrat">
           A Community of Reactjs developers in Kenya
@@ -43,7 +43,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="pt-5 pb-5"
           >
-            <button className="flex mx-auto bg-gray-300 border-0 py-[10px] px-[33px] focus:outline-none hover:bg-gray-600 hover:text-white rounded text-lg">
+            <button className="flex mx-auto bg-red border-0 py-[10px] px-[33px] focus:outline-none hover:bg-gray-600 hover:text-white rounded text-lg">
               Contribute on GitHub
             </button>
           </a>
