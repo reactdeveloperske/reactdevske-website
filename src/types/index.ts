@@ -1,8 +1,7 @@
 export type EventData = {
-  name: string;
-  src: string;
-  event: boolean;
+  id: number,
+  title: string;
+  image_url: string;
   description: string;
-  venue: string;
-  date: string;
+  target: string;
 };
