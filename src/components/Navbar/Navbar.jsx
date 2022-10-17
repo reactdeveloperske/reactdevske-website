@@ -1,7 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import logo from '../../../public/reactdevske.svg';
+// import Image from 'next/image';
+// import logo from '../../../public/reactdevske.svg';
+import IconLogo from '../Logo/Logo';
+
 import {
   ABOUT,
   CONTACT,
@@ -20,15 +22,17 @@ const Navbar = () => {
           <div>
             <Link href={HOME}>
               <a>
-                <Image
+                {/* <Image
                   src={logo}
                   alt="reactdevske logo"
                   width={137}
                   height={60}
-                />
+                /> */}
+                <IconLogo size={60} />
               </a>
             </Link>
           </div>
+
           <div className="">
             <ul className="flex flex-col lg:flex-row justify-center items-center lg:space-x-[30px]">
               <Link href={ABOUT}>
