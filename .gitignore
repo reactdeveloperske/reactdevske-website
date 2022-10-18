@@ -35,10 +35,6 @@ yarn-error.log*
 yarn.lock
 
 #eslint
-/.eslintcache
 /test-results/
 /playwright-report/
 /playwright/.cache/
-
-# typescript
-*.tsbuildinfo

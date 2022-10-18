@@ -12,10 +12,10 @@ import {
   NEWS,
 } from '../../util/routeConstants';
 
-export default function Navbar() {
+const Navbar = () => {
   return (
     <>
-      <header className="px-[181px] w-full shadow-md bg-white font-montserrat">
+      <header className="px-[181px] w-full shadow-md bg-white">
         <nav className="nav py-4 flex flex-col lg:flex-row justify-between items-center">
           <div>
             <Link href={HOME}>
@@ -69,7 +69,7 @@ export default function Navbar() {
               href="https://bit.ly/joinreactdevske"
               rel="noopener noreferrer"
             >
-              <button className="bg-red flex mx-auto bg-gray-300 border-0 py-[10px] px-[33px] focus:outline-none hover:bg-gray-600 hover:text-white rounded text-lg">
+              <button className="flex mx-auto bg-gray-300 border-0 py-[10px] px-[33px] focus:outline-none hover:bg-gray-600 hover:text-white rounded text-lg">
                 Join Community
               </button>
             </a>
@@ -78,4 +78,6 @@ export default function Navbar() {
       </header>
     </>
   );
-}
+};
+
+export default Navbar;
