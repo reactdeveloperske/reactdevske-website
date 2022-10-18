@@ -1,8 +1,7 @@
-// @ts-check
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  pageExtensions: ['page.tsx', 'api.ts'],
+  pageExtensions: ['page.jsx', 'api.js'],
   eslint: {
     dirs: ['src', 'e2e'],
   },

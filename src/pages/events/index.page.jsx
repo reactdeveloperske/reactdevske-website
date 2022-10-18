@@ -2,14 +2,8 @@ import React from 'react';
 import DisplayRC from '../../components/EventsDisplay';
 import logo from '../../../public/reactdevske.svg';
 import Head from 'next/head';
-import type { GetStaticProps } from 'next';
-import type { EventData } from '../../types';
 
-type EventsProps = {
-  data: Array<EventData>;
-};
-
-export const getStaticProps: GetStaticProps<EventsProps> = async () => {
+export const getStaticProps = async () => {
   const data = [
     {
       name: 'Event 1',
@@ -93,7 +87,7 @@ export const getStaticProps: GetStaticProps<EventsProps> = async () => {
   };
 };
 
-export default function Events({ data }: EventsProps) {
+export default function Events({ data }) {
   return (
     <div>
       <Head>
