@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import logo from '../../public/reactdevske.svg';
-import Events from '../components/Events';
+import Events from '../components/Events/Events';
 
 export default function Home() {
   return (

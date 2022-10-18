@@ -1,5 +1,5 @@
 export type EventData = {
-  id: number,
+  id: number;
   title: string;
   image_url: string;
   description: string;

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { booleanFilter } from '../util/booleanFilter';
-import type { EventData } from '../types';
-import Link from 'next/link'
+import { booleanFilter } from '../../util/booleanFilter';
+import type { EventData } from '../../types';
+import Link from 'next/link';
 
 type DisplayRCProps = EventData;
 
@@ -17,7 +17,7 @@ export default function DisplayRC({
     <div className="flex flex-col px-6 py-4 bg-white rounded-lg shadow-md gap-y-2">
       <div className="w-full overflow-hidden rounded-lg cursor-auto aspect-w-1 aspect-h-1">
         <Image
-          alt=""
+          alt={description}
           src={!src ? 'https://bit.ly/placeholder-img' : src}
           layout="fill"
           objectFit="cover"
@@ -30,12 +30,12 @@ export default function DisplayRC({
           onLoadingComplete={() => setLoading(false)}
         />
       </div>
-        <h2 className="text-lg md:text-xl font-bold cursor-pointer hover:text-[#09AFC6]">
-          <Link href={target}>
-            <a target="_blank">{title}</a>
-          </Link>
-        </h2>
-        <p className="flex justify-center text-md md:pb-1">{description}</p>
+      <h2 className="text-lg md:text-xl font-bold cursor-pointer hover:text-[#09AFC6]">
+        <Link href={target}>
+          <a target="_blank">{title}</a>
+        </Link>
+      </h2>
+      <p className="flex justify-center text-md md:pb-1">{description}</p>
     </div>
   );
 }
