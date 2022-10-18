@@ -2,23 +2,22 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { booleanFilter } from '../../util/booleanFilter';
 import type { EventData } from '../../types';
+import Link from 'next/link';
 
 type DisplayRCProps = EventData;
 
 export default function DisplayRC({
-  name,
-  src,
-  event,
+  title,
+  image_url: src,
   description,
-  venue,
-  date,
+  target,
 }: DisplayRCProps) {
   const [loading, setLoading] = useState(true);
   return (
-    <div className="bg-white flex flex-col rounded-lg px-6 py-4 gap-y-2 shadow-md">
-      <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg">
+    <div className="flex flex-col px-6 py-4 bg-white rounded-lg shadow-md gap-y-2">
+      <div className="w-full overflow-hidden rounded-lg cursor-auto aspect-w-1 aspect-h-1">
         <Image
-          alt=" "
+          alt={description}
           src={!src ? 'https://bit.ly/placeholder-img' : src}
           layout="fill"
           objectFit="cover"
@@ -31,15 +30,12 @@ export default function DisplayRC({
           onLoadingComplete={() => setLoading(false)}
         />
       </div>
-      <h2 className="text-lg font-bold">{name}</h2>
-      {event ? (
-        <div className="flex flex-col gap-y-4 md:py-5 lg:py-10">
-          <p className="text-md font-medium">Venue: {venue}</p>
-          <p className="text-md font-medium">Date: {date}</p>
-        </div>
-      ) : (
-        <p className="flex justify-center text-md ">{description}</p>
-      )}
+      <h2 className="text-lg md:text-xl font-bold cursor-pointer hover:text-[#09AFC6]">
+        <Link href={target}>
+          <a target="_blank">{title}</a>
+        </Link>
+      </h2>
+      <p className="flex justify-center text-md md:pb-1">{description}</p>
     </div>
   );
 }
