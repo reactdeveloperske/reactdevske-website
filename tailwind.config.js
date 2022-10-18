@@ -3,6 +3,9 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      animation: {
+        'spin': 'spin 10s linear infinite',
+      },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
       },
