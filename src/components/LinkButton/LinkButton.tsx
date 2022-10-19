@@ -1,28 +1,15 @@
 import React from 'react';
 
-interface LinkProps extends React.HTMLProps<HTMLAnchorElement> {
-  children: React.ReactNode;
-  to: string;
-}
+type LinkButtonProps = React.Component<'a'>;
 
-const LinkButton: React.FC<LinkProps> = ({ to, children, ...props }) => {
+const LinkButton: React.FC<LinkButtonProps> = ({ children, ...props }) => {
   return (
-    <>
-      <a
-        href={to}
-        {...props}
-        className="p-2"
-        style={{
-          width: '100px',
-          overflow: 'hidden',
-          whiteSpace: 'nowrap',
-          textOverflow: 'ellipsis',
-          textAlign: 'center',
-        }}
-      >
-        {children}
-      </a>
-    </>
+    <a
+      className="p-4 px-8 text-white font-bold bg-red-600 rounded block w-[200px] overflow-hidden whitespace-nowrap overflow-ellipsis text-center"
+      {...props}
+    >
+      {children}
+    </a>
   );
 };
 

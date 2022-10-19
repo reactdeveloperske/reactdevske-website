@@ -1,30 +1,17 @@
 import React from 'react';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode;
-  name: string;
-}
+type ButtonProps = React.ComponentProps<typeof Button>;
 
-const Button: React.FC<ButtonProps> = ({ children, name, ...props }) => {
+const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
+  console.log(props);
   return (
-    <>
-      <button
-        type="button"
-        name={name}
-        {...props}
-        className="p-4 px-8 text-white font-bold bg-red-600 rounded"
-        style={{
-          display: 'block',
-          width: '200px',
-          overflow: 'hidden',
-          whiteSpace: 'nowrap',
-          textOverflow: 'ellipsis',
-          textAlign: 'center',
-        }}
-      >
-        {children}
-      </button>
-    </>
+    <button
+      type="button"
+      className="p-4 px-8 text-white font-bold bg-red-600 rounded block w-[200px] overflow-hidden whitespace-nowrap overflow-ellipsis text-center"
+      {...props}
+    >
+      {children}
+    </button>
   );
 };
 
