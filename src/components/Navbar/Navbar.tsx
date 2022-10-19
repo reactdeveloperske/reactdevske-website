@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import logo from '../../../public/reactdevske.svg';
+import Logo from '../Logo/Logo';
+
 import {
   ABOUT,
   CONTACT,
@@ -20,12 +20,7 @@ export default function Navbar() {
           <div>
             <Link href={HOME}>
               <a>
-                <Image
-                  src={logo}
-                  alt="reactdevske logo"
-                  width={137}
-                  height={60}
-                />
+                <Logo size={60} />
               </a>
             </Link>
           </div>
