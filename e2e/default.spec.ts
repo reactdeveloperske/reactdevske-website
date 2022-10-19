@@ -6,7 +6,8 @@ test.beforeEach(async ({ page }) => {
 
 test.describe('Basic test', () => {
   test('should show the title', async ({ page }) => {
-    const title = page.locator('title');
-    await expect(title).toHaveText('Reactjs Developer Community in Kenya');
+    await expect(
+      page.getByRole('heading', { name: 'React Developer Community Kenya' })
+    ).toBeVisible();
   });
 });
