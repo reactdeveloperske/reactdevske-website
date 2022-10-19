@@ -7,9 +7,10 @@ test.beforeEach(async ({ page }) => {
 test.describe('Test if see more link is clickable', () => {
   test('should navigate to the correct URL when See More is clicked', async ({
     page,
+    context,
   }) => {
     const [newPage] = await Promise.all([
-      page.waitForEvent('popup'),
+      context.waitForEvent('page'),
       page.locator('#events >> text="See More"').click(),
     ]);
     await expect(newPage).toHaveURL(
