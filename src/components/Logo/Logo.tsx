@@ -1,16 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '../../../public/img/logo.png';
+import logo from '../../../public/img/logo.svg';
 
-type logoType = {
-    logoSize: number;
-}
+type LogoType = {
+  size: number;
+};
 
-export default function Logo({logoSize}:logoType ) {
-
-    return (
-        <div className='animate-spin'>
-            <Image src={logo} alt="logo" width ={logoSize} />
-        </div>
-    );
+export default function Logo({ size }: LogoType) {
+  return (
+    <Image
+      src={logo}
+      alt="React developer community Kenya logo"
+      width={size}
+      height={size}
+      layout="fixed"
+      className="motion-safe:animate-spin"
+    />
+  );
 }

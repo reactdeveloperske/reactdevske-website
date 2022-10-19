@@ -1,7 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-// import Image from 'next/image';
-// import logo from '../../../public/reactdevske.svg';
 import Logo from '../Logo/Logo';
 
 import {
@@ -15,7 +13,6 @@ import {
 } from '../../util/routeConstants';
 
 export default function Navbar() {
- 
   return (
     <>
       <header className="px-[181px] w-full shadow-md bg-white">
@@ -23,14 +20,7 @@ export default function Navbar() {
           <div>
             <Link href={HOME}>
               <a>
-                {/* <Image
-                  src={logo}
-                  alt="reactdevske logo"
-                  width={137}
-                  height={60}
-                /> */}
-
-                <Logo logoSize= {60} />
+                <Logo size={60} />
               </a>
             </Link>
           </div>

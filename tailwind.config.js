@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'spin': 'spin 10s linear infinite',
+        spin: 'spin 10s linear infinite',
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
