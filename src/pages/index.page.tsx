@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import logo from '../../public/reactdevske.svg';
 import Events from '../components/Events/Events';
+import AboutUs from '../components/about-us/about-us';
 
 export default function Home() {
   return (
@@ -48,6 +49,9 @@ export default function Home() {
               Contribute on GitHub
             </button>
           </a>
+        </div>
+        <div className="flex flex-col py-12 bg-white">
+          <AboutUs />
         </div>
         <Events />
       </main>
