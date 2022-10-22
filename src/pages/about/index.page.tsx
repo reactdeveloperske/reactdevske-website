@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import React from 'react';
-import AboutUs from "../../components/about-us/about-us";
 
 export default function AboutPage() {
   return (
@@ -9,7 +8,7 @@ export default function AboutPage() {
         <title>Reactjs Developer Community in Kenya - About</title>
       </Head>
       <main className="flex justify-center items-center min-h-screen bg-white">
-        <AboutUs/>
+        About Page here
       </main>
     </>
   );
