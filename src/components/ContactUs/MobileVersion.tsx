@@ -18,7 +18,7 @@ export default function MobileVersion() {
             id="name"
             type={'text'}
             placeholder={'Name'}
-            className=" placeholder-[#7E7979] outline-none flex-grow ml-8"
+            className=" placeholder-[#7E7979] outline-none flex-grow ml-8 font-robotoMono text-base"
             required
           />
         </label>
@@ -38,7 +38,7 @@ export default function MobileVersion() {
             id="email"
             type={'email'}
             placeholder={'Email'}
-            className="inline-block ml-2 outline-none flex-grow placeholder-[#7E7979]"
+            className="inline-block ml-2 outline-none flex-grow placeholder-[#7E7979] font-robotoMono text-base"
             required
           />
         </label>
@@ -52,7 +52,7 @@ export default function MobileVersion() {
           />
           <textarea
             placeholder="Message"
-            className=" inline-block ml-2 h-[270px] resize-none outline-none flex-grow placeholder-[#7E7979] "
+            className=" inline-block ml-2 h-[270px] resize-none outline-none flex-grow placeholder-[#7E7979] font-robotoMono text-base "
             required
           ></textarea>
         </label>
