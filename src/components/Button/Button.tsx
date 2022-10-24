@@ -3,7 +3,6 @@ import React from 'react';
 type ButtonProps = React.ComponentProps<'button'>;
 
 const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
-  console.log(props);
   return (
     <button
       type="button"
