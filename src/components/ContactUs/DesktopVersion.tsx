@@ -29,8 +29,8 @@ export default function DesktopVersion() {
           </label>
           <input
             id="email"
-            type={'you@example.com'}
-            placeholder={'Email'}
+            type={'email'}
+            placeholder={'you@example.com'}
             className="border border-[#CEEDF4] w-full rounded-lg px-4 py-3 mb-5 outline-none placeholder-[#7E7979] font-montserrat text-base"
             required
           />
