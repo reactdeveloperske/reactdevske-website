@@ -3,7 +3,7 @@ import DesktopVersion from './DesktopVersion';
 import MobileVersion from './MobileVersion';
 
 export default function ContactUs() {
-  const [screenWidth, setScreenWidth] = useState(1024);
+  const [screenWidth, setScreenWidth] = useState<number | null>(null);
 
   const breakpoint = 1024;
 
@@ -16,6 +16,8 @@ export default function ContactUs() {
 
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  if (!screenWidth) return null;
 
   return (
     <section id="contact-us">
