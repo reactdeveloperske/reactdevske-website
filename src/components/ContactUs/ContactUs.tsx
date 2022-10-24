@@ -20,7 +20,7 @@ export default function ContactUs() {
   if (!screenWidth) return null;
 
   return (
-    <section id="contact-us">
+    <section id="contact-us" className="min-h-screen bg-white pb-20">
       <h2 className="font-montserrat text-base uppercase w-fit mx-auto py-5">
         Contact us
       </h2>
