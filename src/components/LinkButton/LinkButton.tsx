@@ -1,6 +1,6 @@
 import React from 'react';
 
-type LinkButtonProps = React.Component<'a'>;
+type LinkButtonProps = React.ComponentProps<'a'>;
 
 const LinkButton: React.FC<LinkButtonProps> = ({ children, ...props }) => {
   return (
