@@ -5,7 +5,7 @@ export default function Banner() {
     <div>
       <div className="bg-white">
         <div
-          className="p-4"
+          className="p-4 text-danger"
           style={{
             background:
               'repeating-linear-gradient(-55deg, #222, rgb(34, 34, 34) 10px, rgb(234, 179, 8) 10px, rgb(234, 179, 8) 20px)',
