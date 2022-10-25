@@ -3,6 +3,7 @@ import Image from 'next/image';
 import logo from '../../public/reactdevske.svg';
 import Events from '../components/Events/Events';
 import AboutUs from '../components/about-us/about-us';
+import ContactUs from '../components/ContactUs';
 
 export default function Home() {
   return (
@@ -54,6 +55,7 @@ export default function Home() {
           <AboutUs />
         </div>
         <Events />
+        <ContactUs />
       </main>
     </div>
   );
