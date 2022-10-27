@@ -8,7 +8,7 @@ export default function Pillar({
   label: string;
 }) {
   return (
-    <div className="flex max-w-xs md:max-w-sm min-w-[70%] md:min-w-[40%] space-x-4 p-2 md:p-4 lg:p-6 shadow-md md:shadow-none rounded-lg items-center bg-white md:bg-[#09AFC6]">
+    <div className="flex max-w-xs lg:max-w-sm min-w-[70%] md:min-w-[50%] space-x-4 p-2 md:p-4 lg:p-6 shadow-md md:shadow-none rounded-lg items-center bg-white md:bg-[#09AFC6]">
       <p className="text-2xl md:text-4xl font-extrabold md:text-white tracking-wide">
         {count}
       </p>
