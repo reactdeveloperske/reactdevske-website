@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import logo from '../../public/reactdevske.svg';
-import Events from '../components/Events/Events';
-import AboutUs from '../components/about-us/about-us';
+import AboutUs from '../components/AboutUs/AboutUs';
 import ContactUs from '../components/ContactUs';
+import Events from '../components/Events/Events';
 import MissionPillars from '../components/MissionPillars/MissionPillars';
 
 export default function Home() {
