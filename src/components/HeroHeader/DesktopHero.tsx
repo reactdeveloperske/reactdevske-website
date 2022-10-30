@@ -12,8 +12,7 @@ export default function HeroHeader() {
         alt=""
         objectFit="cover"
         layout="fill"
-        className="-z-10 fixed top-0 opacity-[0.85]"
-        priority
+        className="-z-10 fixed top-0 opacity-[0.85] bg-[#333333]"
       />
       <div className="relative">
         <Navbar />
