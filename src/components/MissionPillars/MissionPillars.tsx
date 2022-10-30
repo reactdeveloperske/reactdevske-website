@@ -1,13 +1,12 @@
-import React from 'react';
-import Pillar from '../Pillar/Pillar';
 import Image from 'next/image';
+import Pillar from '../Pillar/Pillar';
 
 export default function MissionPillars() {
   return (
     <section className="flex flex-col w-full md:justify-center items-center bg-white md:bg-[#CEEDF4] py-12 space-y-10">
-      <p className="md:uppercase font-bold md:font-light text-2xl md:text-5xl">
+      <h2 className="md:uppercase font-bold md:font-light text-2xl md:text-5xl">
         Our Mission Pillars
-      </p>
+      </h2>
       <div className="flex flex-col md:flex-row md:items-center md:justify-center w-full px-6 space-y-4 md:space-x-6">
         <div className="flex">
           <Pillar count="01" label="Mentorship" />
