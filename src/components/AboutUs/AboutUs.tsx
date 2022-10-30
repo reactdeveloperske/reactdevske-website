@@ -1,14 +1,12 @@
-import React from 'react';
-
 export default function AboutUs() {
   return (
     <section
       id="about-us"
       className="flex flex-col max-w-2xl justify-center items-center self-center space-y-4 px-4"
     >
-      <p className="text-3xl md:text-6xl tracking-wide md:font-light ">
-        ABOUT US
-      </p>
+      <h2 className="text-3xl md:text-6xl tracking-wide md:font-light uppercase">
+        About Us
+      </h2>
       <p className="hidden md:inline-block text-4xl font-bold ">
         Empowering great talent
       </p>
