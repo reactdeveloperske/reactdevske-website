@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Logo from '../Logo/Logo';
 
 import { ABOUT, CONTACT, EVENTS, HOME } from '../../util/routeConstants';
-import Button from '../Button/Button';
+import LinkButton from '../LinkButton/LinkButton';
 
 export default function Navbar() {
   return (
@@ -31,15 +31,14 @@ export default function Navbar() {
             </ul>
           </div>
           <div>
-            <a
-              target="_blank"
+            <LinkButton
+              className="flex justify-center items-center bg-[#EC0505] w-[203px] h-[46px] rounded-md text-base text-white font-montserrat font-bold"
               href="https://bit.ly/joinreactdevske"
+              target="_blank"
               rel="noopener noreferrer"
             >
-              <Button className="bg-[#EC0505] w-[203px] h-[46px] rounded-md text-base text-white font-montserrat font-bold">
-                Join Community
-              </Button>
-            </a>
+              Join Community
+            </LinkButton>
           </div>
         </nav>
       </header>

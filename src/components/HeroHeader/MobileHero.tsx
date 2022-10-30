@@ -4,8 +4,8 @@ import Logo from '../Logo';
 import githubIcon from '../../../public/img/github-logo.svg';
 import menuIcon from '../../../public/img/menu-icon.svg';
 import closeIcon from '../../../public/img/close-icon.svg';
-import Button from '../Button/Button';
 import DropdownMenu from './DropdownMenu';
+import LinkButton from '../LinkButton/LinkButton';
 
 export default function MobileHero() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -53,15 +53,14 @@ export default function MobileHero() {
           ReactDevsKe
         </h1>
         <div className="flex justify-center items-center mb-[34px]">
-          <a
-            target="_blank"
+          <LinkButton
             href="https://bit.ly/joinreactdevske"
+            target="_blank"
             rel="noopener noreferrer"
+            className="flex justify-center items-center bg-[#12A04E] text-white w-44 rounded-md"
           >
-            <Button className="bg-[#12A04E] text-white w-44 rounded-md">
-              Join React.JS Kenya
-            </Button>
-          </a>
+            Join React.JS Kenya
+          </LinkButton>
         </div>
         <p className="font-montserrat text-[#535353] text-xs text-center px-4">
           We are a tech community in Kenya focused on the React JS library and

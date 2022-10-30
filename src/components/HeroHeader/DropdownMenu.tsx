@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
-import Button from '../Button/Button';
 import infoIcon from '../../../public/img/info-icon.svg';
 import calendarIcon from '../../../public/img/calendar-icon.svg';
 import contactIcon from '../../../public/img/contact-icon.svg';
 import { ABOUT, CONTACT, EVENTS } from '../../util/routeConstants';
+import LinkButton from '../LinkButton/LinkButton';
 
 interface DropdownMenuProps {
   onCloseMenu: () => void;
@@ -46,17 +46,15 @@ export default function DropdownMenu({ onCloseMenu }: DropdownMenuProps) {
         </li>
       </ul>
       <div className="">
-        <a
-          target="_blank"
+        <LinkButton
+          className="flex justify-center items-center bg-[#12A04E] text-white w-full font-montserrat text-xs py-[10px]"
           href="https://bit.ly/joinreactdevske"
+          target="_blank"
           rel="noopener noreferrer"
-          className="w-full"
           onClick={() => onCloseMenu()}
         >
-          <Button className="bg-[#12A04E] text-white w-full font-montserrat text-xs py-[10px]">
-            Join React.JS Kenya
-          </Button>
-        </a>
+          Join React.JS Kenya
+        </LinkButton>
       </div>
     </div>
   );

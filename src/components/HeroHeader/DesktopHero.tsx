@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
-import Button from '../Button/Button';
 import Navbar from '../Navbar';
 import bgImage from '../../../public/images/hero-image.svg';
+import LinkButton from '../LinkButton/LinkButton';
 
 export default function HeroHeader() {
   return (
@@ -26,15 +26,14 @@ export default function HeroHeader() {
           its ecosystem.
         </p>
         <div className="flex items-center justify-center mb-44 relative">
-          <a
-            target="_blank"
+          <LinkButton
+            className="flex justify-center items-center bg-[#EC0505] w-[307px] h-[61px] rounded-md text-white font-montserrat font-bold"
             href="https://bit.ly/joinreactdevske"
+            target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="bg-[#EC0505] w-[307px] h-[61px] rounded-md text-white font-montserrat font-bold">
-              Join ReactDevsKe
-            </Button>
-          </a>
+            Join ReactDevsKe
+          </LinkButton>
         </div>
       </div>
     </div>
