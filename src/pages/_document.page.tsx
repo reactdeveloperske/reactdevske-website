@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html className="scroll-smooth">
         <Head>
           {/* <!-- Open Graph / Facebook --> */}
           <meta property="og:type" content="website" key="og-type" />

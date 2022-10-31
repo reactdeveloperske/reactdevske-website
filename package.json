@@ -14,6 +14,7 @@
     "validate": "concurrently --kill-others-on-fail -g -p \"[{name}]\" -n \"prettier,lint,typecheck,build\" \"npm:prettier:check -s\" \"npm:lint -s\" \"npm:typecheck -s\" \"npm:build -s -- --no-lint\""
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.3",
     "next": "12.3.1",
     "react": "18.1.0",
     "react-dom": "18.1.0"
