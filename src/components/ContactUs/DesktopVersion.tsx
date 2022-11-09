@@ -1,29 +1,31 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { useState } from 'react';
 
-import {useForm, ValidationError} from '@formspree/react';
+import { useForm, ValidationError } from '@formspree/react';
 
-import ReCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHA from 'react-google-recaptcha';
 
 export default function DesktopVersion() {
+  const [captchaComplete, setCaptchaComplete] = useState<boolean>(false);
 
-      const [captchaComplete, setCaptchaComplete] = useState<boolean>(false);
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORMSPREE_ID!);
 
-      const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORMSPREE_ID!);
-
-      const handleRecaptchaResult = (result: string | null) => {
-        if (result) {
-            setCaptchaComplete(true);
-        }
+  const handleRecaptchaResult = (result: string | null) => {
+    if (result) {
+      setCaptchaComplete(true);
     }
+  };
 
-    if (state.succeeded) {
-      return (
-        <div className="flex justify-center items-center">
-              <p className='text-xl font-medium text-green-800'>Thank you for your submission. We will get back to you as soon as possible</p>
-          </div>
-      )
-    }
+  if (state.succeeded) {
+    return (
+      <div className="flex justify-center items-center">
+        <p className="text-xl font-medium text-green-800">
+          Thank you for your submission. We will get back to you as soon as
+          possible
+        </p>
+      </div>
+    );
+  }
 
   return (
     <>
@@ -40,8 +42,8 @@ export default function DesktopVersion() {
           </label>
           <input
             id="name"
-            type='text'
-            name='name'
+            type="text"
+            name="name"
             placeholder={'Jane Doe'}
             className="border border-[#CEEDF4] w-full rounded-lg px-4 py-3 mb-5 placeholder-[#7E7979] outline-none font-montserrat text-base"
             required
@@ -55,8 +57,8 @@ export default function DesktopVersion() {
           </label>
           <input
             id="email"
-            type='email'
-            name='email'
+            type="email"
+            name="email"
             placeholder={'you@example.com'}
             className="border border-[#CEEDF4] w-full rounded-lg px-4 py-3 mb-5 outline-none placeholder-[#7E7979] font-montserrat text-base"
             required
@@ -70,35 +72,41 @@ export default function DesktopVersion() {
           </label>
           <textarea
             id="message"
-            name='message'
+            name="message"
             placeholder="Hello, I'm getting in touch ..."
             className="border border-[#CEEDF4] w-full rounded-lg px-4 py-[22px] mb-9 h-[178px] resize-none outline-none placeholder-[#7E7979] font-montserrat text-base"
             required
           />
-          <ValidationError prefix="Message" field="message" errors={state.errors} />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
           {/*//TODO: replace this button with the app button component */}
 
           <ReCAPTCHA
-                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
-                onChange={handleRecaptchaResult}
-            />
+            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+            onChange={handleRecaptchaResult}
+          />
 
-          {captchaComplete ?
-          <button
-            type="submit"
-            disabled={state.submitting}
-            className="block rounded-md p-2 my-2 w-[247px] h-14 mx-auto bg-[#EC0505] text-white font-bold font-montserrat"
-          >
-            Send Message
-          </button> : 
-          <button
-          type="submit"
-          disabled
-          className="block rounded-md p-2 my-2 w-[247px] h-14 mx-auto bg-[#EC0505] text-white font-bold font-montserrat"
-        >
-          Send Message
-        </button> }
-        <ValidationError errors={state.errors} />
+          {captchaComplete ? (
+            <button
+              type="submit"
+              disabled={state.submitting}
+              className="block rounded-md p-2 my-2 w-[247px] h-14 mx-auto bg-[#EC0505] text-white font-bold font-montserrat"
+            >
+              Send Message
+            </button>
+          ) : (
+            <button
+              type="submit"
+              disabled
+              className="block rounded-md p-2 my-2 w-[247px] h-14 mx-auto bg-[#EC0505] text-white font-bold font-montserrat"
+            >
+              Send Message
+            </button>
+          )}
+          <ValidationError errors={state.errors} />
         </form>
       </div>
     </>
