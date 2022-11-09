@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { useState } from 'react';
 
 import {useForm, ValidationError} from '@formspree/react';
@@ -96,7 +97,7 @@ export default function DesktopVersion() {
           className="block rounded-md p-2 my-2 w-[247px] h-14 mx-auto bg-[#EC0505] text-white font-bold font-montserrat"
         >
           Send Message
-        </button>}
+        </button> }
         <ValidationError errors={state.errors} />
         </form>
       </div>
