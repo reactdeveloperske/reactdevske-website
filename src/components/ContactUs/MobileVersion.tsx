@@ -98,13 +98,13 @@ export default function MobileVersion() {
         />
 
         {/* //TODO: replace this button with the app button component */}
-          <button
-            type="submit"
-            disabled={!captchaComplete || state.submitting}
-            className="border-2 border-[#12A04E] w-full rounded-md p-2 my-2 font-montserrat font-bold text-[#12A04E]"
-          >
-            Send Message
-          </button>
+        <button
+          type="submit"
+          disabled={!captchaComplete || state.submitting}
+          className="border-2 border-[#12A04E] w-full rounded-md p-2 my-2 font-montserrat font-bold text-[#12A04E]"
+        >
+          Send Message
+        </button>
         <ValidationError errors={state.errors} />
       </form>
     </>
