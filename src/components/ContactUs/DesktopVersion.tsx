@@ -82,30 +82,21 @@ export default function DesktopVersion() {
             field="message"
             errors={state.errors}
           />
-          {/*//TODO: replace this button with the app button component */}
 
           <ReCAPTCHA
             sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
             onChange={handleRecaptchaResult}
-          />
+            />
 
-          {captchaComplete ? (
+            {/* //TODO: replace this button with the app button component */}
             <button
               type="submit"
-              disabled={state.submitting}
+              disabled={!captchaComplete || state.submitting}
               className="block rounded-md p-2 my-2 w-[247px] h-14 mx-auto bg-[#EC0505] text-white font-bold font-montserrat"
             >
               Send Message
             </button>
-          ) : (
-            <button
-              type="submit"
-              disabled
-              className="block rounded-md p-2 my-2 w-[247px] h-14 mx-auto bg-[#EC0505] text-white font-bold font-montserrat"
-            >
-              Send Message
-            </button>
-          )}
+          
           <ValidationError errors={state.errors} />
         </form>
       </div>

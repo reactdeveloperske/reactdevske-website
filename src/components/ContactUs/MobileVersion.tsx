@@ -91,30 +91,20 @@ export default function MobileVersion() {
           field="message"
           errors={state.errors}
         />
-        {/*//TODO: replace this button with the app button component */}
 
         <ReCAPTCHA
           sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
           onChange={handleRecaptchaResult}
         />
 
-        {captchaComplete ? (
+        {/* //TODO: replace this button with the app button component */}
           <button
             type="submit"
-            disabled={state.submitting}
+            disabled={!captchaComplete || state.submitting}
             className="border-2 border-[#12A04E] w-full rounded-md p-2 my-2 font-montserrat font-bold text-[#12A04E]"
           >
             Send Message
           </button>
-        ) : (
-          <button
-            type="submit"
-            disabled
-            className="border-2 border-[#12A04E] w-full rounded-md p-2 my-2 font-montserrat font-bold text-[#12A04E]"
-          >
-            Send Message
-          </button>
-        )}
         <ValidationError errors={state.errors} />
       </form>
     </>
