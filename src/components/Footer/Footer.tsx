@@ -20,7 +20,10 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="bg-[#CEEDF4] w-full md:pt-12 md:pb-[25px] py-4">
+    <footer
+      id="footer"
+      className="bg-[#CEEDF4] w-full md:pt-12 md:pb-[25px] py-4"
+    >
       <div className="lg:w-1/4 md:w-[35%] sm:w-[40%] w-[65%] mx-auto flex flex-col justify-center items-center">
         {screenWidth && (
           <div>
