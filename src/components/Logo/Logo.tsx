@@ -1,20 +1,20 @@
 import React from 'react';
-import Image from 'next/image';
-import logo from '../../../public/img/logo.svg';
+import Lottie from 'react-lottie';
+import animationData from '../../../public/lotties/animated-logo.json';
 
 type LogoType = {
   size: number;
 };
 
+const lottieOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: 'xMidYMid slice',
+  },
+};
+
 export default function Logo({ size }: LogoType) {
-  return (
-    <Image
-      src={logo}
-      alt="React developer community Kenya logo"
-      width={size}
-      height={size}
-      layout="fixed"
-      className="motion-safe:animate-spin"
-    />
-  );
+  return <Lottie width={size} height={size} options={lottieOptions} />;
 }
