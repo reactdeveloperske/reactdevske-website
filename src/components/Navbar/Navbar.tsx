@@ -8,7 +8,7 @@ import LinkButton from '../LinkButton/LinkButton';
 export default function Navbar() {
   return (
     <>
-      <header className="lg:pl-[49px] w-full bg-transparent">
+      <div className="lg:pl-[49px] w-full bg-transparent">
         <nav className="nav py-4 pl-5 flex flex-col md:flex-row justify-around items-center">
           <div>
             <Link href={HOME}>
@@ -41,7 +41,7 @@ export default function Navbar() {
             </LinkButton>
           </div>
         </nav>
-      </header>
+      </div>
     </>
   );
 }
