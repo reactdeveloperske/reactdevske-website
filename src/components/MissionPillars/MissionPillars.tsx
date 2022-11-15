@@ -15,7 +15,7 @@ export default function MissionPillars() {
           <div className="flex w-1/2 md:w-full">
             <div className="w-full overflow-hidden aspect-w-4 aspect-h-3">
               <Image
-                src={'/images/mentorship-image.png'}
+                src={'/images/mentorship-image.jpg'}
                 alt="Mentorship Image"
                 layout="fill"
               />
@@ -31,7 +31,7 @@ export default function MissionPillars() {
           <div className="flex w-1/2 md:w-full">
             <div className="w-full overflow-hidden aspect-w-4 aspect-h-3">
               <Image
-                src={'/images/learning-image.png'}
+                src={'/images/learning-image.jpg'}
                 alt="Learning Image"
                 layout="fill"
               />
@@ -47,7 +47,7 @@ export default function MissionPillars() {
           <div className="flex w-1/2 md:w-full">
             <div className="w-full overflow-hidden aspect-w-4 aspect-h-3">
               <Image
-                src={'/images/community-image.png'}
+                src={'/images/community-image.jpg'}
                 alt="Community Image"
                 layout="fill"
               />
