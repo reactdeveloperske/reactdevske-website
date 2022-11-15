@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Navbar from '../Navbar';
-import bgImage from '../../../public/images/hero-image.svg';
+import bgImage from '../../../public/images/hero-image.jpg';
 import LinkButton from '../LinkButton/LinkButton';
 
 export default function HeroHeader() {
