@@ -1,10 +1,6 @@
 import Head from 'next/head';
-import AboutUs from '../components/AboutUs/AboutUs';
-import ContactUs from '../components/ContactUs';
-import Events from '../components/Events/Events';
-import MissionPillars from '../components/MissionPillars/MissionPillars';
-import HeroHeader from '../components/HeroHeader';
-import Footer from '../components/Footer';
+import Image from 'next/image';
+import logo from '../../public/reactdevske.svg';
 
 export default function Home() {
   return (
@@ -22,12 +18,8 @@ export default function Home() {
           key="title"
         />
       </Head>
+
       <main className="">
-<<<<<<< HEAD:src/pages/index.page.tsx
-        <HeroHeader />
-        <div className="flex flex-col py-12 bg-white">
-          <AboutUs />
-=======
         <h1 className="text-center pt-6 text-3xl text-white font-bold font-montserrat">
           React Developer Community Kenya
         </h1>
@@ -56,12 +48,7 @@ export default function Home() {
               </button>
             </a>
 
->>>>>>> origin/main:src/pages/index.page.jsx
         </div>
-        <MissionPillars />
-        <Events />
-        <ContactUs />
-        <Footer />
       </main>
     </div>
   );

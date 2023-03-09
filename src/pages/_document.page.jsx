@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html className="scroll-smooth">
+      <Html>
         <Head>
           {/* <!-- Open Graph / Facebook --> */}
           <meta property="og:type" content="website" key="og-type" />
@@ -67,7 +67,7 @@ class MyDocument extends Document {
             crossOrigin="true"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&family=Roboto+Mono:wght@400;700&family=DM+Sans&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap"
             rel="stylesheet"
           />
         </Head>

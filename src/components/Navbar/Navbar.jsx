@@ -1,47 +1,81 @@
 import React from 'react';
 import Link from 'next/link';
-import Logo from '../Logo/Logo';
-
-import { ABOUT, CONTACT, EVENTS, HOME } from '../../util/routeConstants';
-import LinkButton from '../LinkButton/LinkButton';
+import Image from 'next/image';
+import logo from '../../../public/reactdevske.svg';
+import {
+  ABOUT,
+  CONTACT,
+  EVENTS,
+  FORUM,
+  HOME,
+  MEMBERS,
+  NEWS,
+} from '../../util/routeConstants';
 
 const Navbar = () => {
   return (
     <>
-      <div className="lg:pl-[49px] w-full bg-transparent">
-        <nav className="nav py-4 pl-5 flex flex-col md:flex-row justify-around items-center">
+      <header className="px-[181px] w-full shadow-md bg-white">
+        <nav className="nav py-4 flex flex-col lg:flex-row justify-between items-center">
           <div>
             <Link href={HOME}>
               <a>
-                <Logo size={60} />
+                <Image
+                  src={logo}
+                  alt="reactdevske logo"
+                  width={137}
+                  height={60}
+                />
               </a>
             </Link>
           </div>
           <div className="">
-            <ul className="font-montserrat text-base text-white flex flex-row justify-between items-center md:space-x-[30px]">
-              <a href={ABOUT}>
-                <li>About us</li>
-              </a>
-              <a href={EVENTS}>
-                <li>Events</li>
-              </a>
-              <a href={CONTACT}>
-                <li>Contact</li>
-              </a>
+            <ul className="flex flex-col lg:flex-row justify-center items-center lg:space-x-[30px]">
+              <Link href={ABOUT}>
+                <a>
+                  <li>About us</li>
+                </a>
+              </Link>
+              <Link href={MEMBERS}>
+                <a>
+                  <li>Members</li>
+                </a>
+              </Link>
+              <Link href={EVENTS}>
+                <a>
+                  <li>Events</li>
+                </a>
+              </Link>
+              <Link href={NEWS}>
+                <a>
+                  <li>News</li>
+                </a>
+              </Link>
+              <Link href={FORUM}>
+                <a>
+                  <li>Forum</li>
+                </a>
+              </Link>
+              <Link href={CONTACT}>
+                <a>
+                  <li>Contact</li>
+                </a>
+              </Link>
             </ul>
           </div>
           <div>
-            <LinkButton
-              className="flex justify-center items-center bg-[#EC0505] w-[203px] h-[46px] rounded-md text-base text-white font-montserrat font-bold"
-              href="https://bit.ly/joinreactdevske"
+            <a
               target="_blank"
+              href="https://bit.ly/joinreactdevske"
               rel="noopener noreferrer"
             >
-              Join Community
-            </LinkButton>
+              <button className="flex mx-auto bg-gray-300 border-0 py-[10px] px-[33px] focus:outline-none hover:bg-gray-600 hover:text-white rounded text-lg">
+                Join Community
+              </button>
+            </a>
           </div>
         </nav>
-      </div>
+      </header>
     </>
   );
 };
