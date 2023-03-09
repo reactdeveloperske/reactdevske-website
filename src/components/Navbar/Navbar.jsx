@@ -5,7 +5,7 @@ import Logo from '../Logo/Logo';
 import { ABOUT, CONTACT, EVENTS, HOME } from '../../util/routeConstants';
 import LinkButton from '../LinkButton/LinkButton';
 
-export default function Navbar() {
+const Navbar = () => {
   return (
     <>
       <div className="lg:pl-[49px] w-full bg-transparent">
@@ -44,4 +44,6 @@ export default function Navbar() {
       </div>
     </>
   );
-}
+};
+
+export default Navbar;

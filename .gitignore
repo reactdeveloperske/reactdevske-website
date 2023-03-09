@@ -39,6 +39,3 @@ yarn.lock
 /test-results/
 /playwright-report/
 /playwright/.cache/
-
-# typescript
-*.tsbuildinfo

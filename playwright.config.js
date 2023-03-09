@@ -1,5 +1,5 @@
-import type { PlaywrightTestConfig } from '@playwright/test';
-import { devices } from '@playwright/test';
+// @ts-check
+const { devices } = require('@playwright/test');
 
 /**
  * Read environment variables from file.
@@ -11,7 +11,7 @@ import { devices } from '@playwright/test';
  * @see https://playwright.dev/docs/test-configuration
  * @type {import('@playwright/test').PlaywrightTestConfig}
  */
-const config: PlaywrightTestConfig = {
+const config = {
   testDir: './e2e',
   /* Maximum time one test can run for. */
   timeout: 30 * 1000,
@@ -31,7 +31,7 @@ const config: PlaywrightTestConfig = {
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: process.env.CI ? [['github'], ['list'], ['html']] : 'list',
+  reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
@@ -41,6 +41,13 @@ const config: PlaywrightTestConfig = {
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+  },
+  /* Run the dev server and wait for it to be fully up before running the tests */
+  webServer: {
+    command: 'npm run dev',
+    port: 3000,
+    timeout: 120 * 1000,
+    reuseExistingServer: !process.env.CI,
   },
 
   /* Configure projects for major browsers */
@@ -99,12 +106,10 @@ const config: PlaywrightTestConfig = {
   // outputDir: 'test-results/',
 
   /* Run your local dev server before starting the tests */
-  webServer: {
-    command: 'npm run dev',
-    port: 3000,
-    timeout: 120 * 1000,
-    reuseExistingServer: true,
-  },
+  // webServer: {
+  //   command: 'npm run start',
+  //   port: 3000,
+  // },
 };
 
-export default config;
+module.exports = config;
