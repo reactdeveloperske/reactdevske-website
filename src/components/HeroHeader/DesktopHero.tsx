@@ -1,14 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
 import Navbar from '../Navbar';
-import bgImage from '../../../public/images/hero-image.jpg';
 import LinkButton from '../LinkButton/LinkButton';
 
 export default function HeroHeader() {
   return (
     <div>
       <Image
-        src={bgImage}
+        src="https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532588/website-images/hero-image_dqpm0k.jpg"
         alt=""
         objectFit="cover"
         layout="fill"
