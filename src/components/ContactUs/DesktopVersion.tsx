@@ -8,7 +8,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 export default function DesktopVersion() {
   const [captchaComplete, setCaptchaComplete] = useState<boolean>(false);
 
-  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORMSPREE_ID!);
+  const [state, handleSubmit] = useForm("process.env.NEXT_PUBLIC_FORMSPREE_ID!");
 
   const handleRecaptchaResult = (result: string | null) => {
     if (result) {
@@ -84,7 +84,7 @@ export default function DesktopVersion() {
           />
 
           <ReCAPTCHA
-            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+            sitekey={"process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!"}
             onChange={handleRecaptchaResult}
           />
 
