@@ -4,7 +4,6 @@ Please note we have a [code of conduct](https://github.com/reactdeveloperske/rea
 
 ## Contributing procedure
 
-
 ### Find an issue to work on
 
 - You can contribute to this project by either creating an issue or by checking out the open issues available.
@@ -83,18 +82,15 @@ git checkout -b new_branch_name
 
 2. start development server
 
-
-
 ```bash
 npm run dev
 ```
 
 <br>
 
-***
+---
+
 ##### :warning: RoadBlock: Missing environment variables
-
-
 
 You may have noticed some error about providing a form key. This is because we use [Formspree](https://formspree.io/) to handle our contact form. To get around this, you can:
 
@@ -104,30 +100,31 @@ You may have also noticed a second error about missing required parameters: site
 
 - Use your own [reCAPTCHA](https://www.google.com/recaptcha/about/) account and set the `RECAPTCHA_SITE_KEY` environment variable to your keys. (refer to the .env.example file for guidance on where to put your recaptcha site key).
 
-
 Both of these changes will require you to create a `.env` file in the root directory of the project. You can copy the contents of the `.env.example` file and paste them into the `.env` file. Then, you can add your keys to the appropriate variables.
 
-***
+---
+
 <br>
 
 3. Make changes to the codebase
 
 - Open this directory in your favorite text editor / IDE, and see your changes live by visiting `localhost:3000` from your browser
 - Pro Tip: Explore scripts within `package.json` for more build options
+- Pro Tip: Use [Prettier](https://prettier.io/) to format your code before committing by running `npm run prettier:check` and `npm run prettier:format` to check and fix formatting issues
 
-1. Add changes made to the repo addressing an issue
+4. Add changes made to the repo addressing an issue
 
 ```bash
 git add [file_name]
 ```
 
-2. Commit and prepare for pull request (PR). In your PR commit message, reference the issue it resolves (see [how to link a commit message to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
+5. Commit and prepare for pull request (PR). In your PR commit message, reference the issue it resolves (see [how to link a commit message to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
 
 ```bash
 git commit -m "brief description of changes [Fixes #1234]"
 ```
 
-1. Push to your GitHub account
+6. Push to your GitHub account
 
 ```bash
 git push -u origin [feature_branch]
