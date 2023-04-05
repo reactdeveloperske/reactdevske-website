@@ -101,16 +101,20 @@ npm run dev
 - Open this directory in your favorite text editor / IDE, and see your changes live by visiting `localhost:3000` from your browser
 - Pro Tip: Explore scripts within `package.json` for more build options
 
-1. Commit and prepare for pull request (PR). In your PR commit message, reference the issue it resolves (see [how to link a commit message to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
+1. Add changes made to the repo addressing an issue
+```
+git add [file_name]
+```
+2. Commit and prepare for pull request (PR). In your PR commit message, reference the issue it resolves (see [how to link a commit message to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
 
 ```
 $ git commit -m "brief description of changes [Fixes #1234]"
 ```
 
-4. Push to your GitHub account
+1. Push to your GitHub account
 
 ```
-$ git push
+$ git push -u origin [feature_branch]
 ```
 
 ### Submit your Pull Request (PR)🚀
