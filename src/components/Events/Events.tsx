@@ -16,7 +16,7 @@ const events: EventData[] = [
     title: 'Weekly Online Standups',
     description:
       'Weekly open calls in the community’s Telegram group discussing industry-related topics.',
-    image_url: 'https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532588/website-images/learning-image_eylqwm.jpg',
+    image_url: 'https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532589/website-images/weekly_standups_lg3rth.jpg'
     target: 'https://bit.ly/joinreactdevske',
   },
   {
@@ -24,7 +24,7 @@ const events: EventData[] = [
     title: 'Community Power Sessions',
     description:
       'Community members meet and share technical concepts with other members of the community.',
-    image_url: '/images/community_sessions.jpg',
+    image_url: 'https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532589/website-images/community_sessions_xsyd8d.jpg',
     target: 'https://www.youtube.com/channel/UC9_eVcPBk4T-DcZLHpQfy4w/videos',
   },
   {
