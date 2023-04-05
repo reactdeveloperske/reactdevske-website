@@ -16,7 +16,7 @@ const events: EventData[] = [
     title: 'Weekly Online Standups',
     description:
       'Weekly open calls in the community’s Telegram group discussing industry-related topics.',
-    image_url: 'https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532589/website-images/weekly_standups_lg3rth.jpg'
+    image_url: 'https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532589/website-images/weekly_standups_lg3rth.jpg',
     target: 'https://bit.ly/joinreactdevske',
   },
   {
