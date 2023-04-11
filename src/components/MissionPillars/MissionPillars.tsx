@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Pillar from '../Pillar/Pillar';
-import {Fade} from "react-reveal"
+import {Fade} from "react-awesome-reveal"
 
 export default function MissionPillars() {
   return (
@@ -10,14 +10,14 @@ export default function MissionPillars() {
       </h2>
       <div className="flex flex-col md:flex-row md:items-center md:justify-center w-full px-6 space-y-4 md:space-x-6">
         <div className="flex">
-          <Fade left>
+          <Fade direction="left">
           <Pillar count="01" label="Mentorship" />
           </Fade>
         </div>
         <div className="flex justify-end w-full md:w-2/5 lg:w-1/4">
           <div className="flex w-1/2 md:w-full">
             <div className="w-full overflow-hidden aspect-w-4 aspect-h-3">
-              <Fade right>
+              <Fade direction='right'>
               <Image
                 src={'/images/mentorship-image.jpg'}
                 alt="Mentorship Image"
@@ -30,14 +30,14 @@ export default function MissionPillars() {
       </div>
       <div className="flex flex-col md:flex-row-reverse md:items-center md:justify-center w-full px-6 space-y-4 md:space-x-6 md:space-x-reverse">
         <div className="flex justify-end">
-          <Fade right>
+          <Fade direction='right'>
           <Pillar count="02" label="Learning" />
        </Fade>
         </div>
         <div className="flex md:justify-start w-full md:w-2/5 lg:w-1/4">
           <div className="flex w-1/2 md:w-full">
             <div className="w-full overflow-hidden aspect-w-4 aspect-h-3">
-              <Fade left>
+              <Fade direction='left'>
               <Image
                 src={'/images/learning-image.jpg'}
                 alt="Learning Image"
@@ -50,14 +50,14 @@ export default function MissionPillars() {
       </div>
       <div className="flex flex-col md:flex-row md:items-center md:justify-center w-full px-6 space-y-4 md:space-x-6">
         <div className="flex">
-          <Fade left>
+          <Fade direction='left'>
           <Pillar count="03" label="Community" />
           </Fade>
         </div>
         <div className="flex justify-end w-full md:w-2/5 lg:w-1/4 ">
           <div className="flex w-1/2 md:w-full">
             <div className="w-full overflow-hidden aspect-w-4 aspect-h-3">
-              <Fade right>
+              <Fade direction='right'>
               <Image
                 src={'/images/community-image.jpg'}
                 alt="Community Image"
