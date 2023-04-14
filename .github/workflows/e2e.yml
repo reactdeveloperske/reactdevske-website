@@ -4,24 +4,26 @@ on:
     branches: [main, develop]
   pull_request:
     branches: [main, develop]
-env:
-  NEXT_PUBLIC_FORMSPREE_ID: ${{ secrets.NEXT_PUBLIC_FORMSPREE_ID }}
-  NEXT_PUBLIC_RECAPTCHA_SITE_KEY: ${{ secrets.NEXT_PUBLIC_RECAPTCHA_SITE_KEY }}
 jobs:
   e2e:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Prepare .env file
+        run: |
+          rm -f .env && touch .env
+          echo "NEXT_PUBLIC_FORMSPREE_ID=${{ secrets.NEXT_PUBLIC_FORMSPREE_ID }}" >> .env
+          echo "NEXT_PUBLIC_RECAPTCHA_SITE_KEY=${{ secrets.NEXT_PUBLIC_RECAPTCHA_SITE_KEY }}" >> .env
       - uses: actions/setup-node@v3
         with:
           node-version: '18.x'
       - name: Install dependencies
-        run: npm install -g yarn && yarn install --frozen-lockfile
+        run: npm ci
       - name: Install Playwright Browsers
-        run: yarn playwright install --with-deps
+        run: npx playwright install --with-deps
       - name: Run Playwright tests
-        run: yarn test
+        run: npm run test
       - uses: actions/upload-artifact@v3
         if: always()
         with:
