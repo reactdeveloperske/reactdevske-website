@@ -13,8 +13,8 @@ jobs:
       - name: Prepare .env file
         run: |
           rm -f .env && touch .env
-          echo "NEXT_PUBLIC_FORMSPREE_ID=${{ secrets.NEXT_PUBLIC_FORMSPREE_ID }}" >> .env
-          echo "NEXT_PUBLIC_RECAPTCHA_SITE_KEY=${{ secrets.NEXT_PUBLIC_RECAPTCHA_SITE_KEY }}" >> .env
+          echo "NEXT_PUBLIC_FORMSPREE_ID=fake123" >> .env
+          echo "NEXT_PUBLIC_RECAPTCHA_SITE_KEY=123fAkE" >> .env
       - uses: actions/setup-node@v3
         with:
           node-version: '18.x'
