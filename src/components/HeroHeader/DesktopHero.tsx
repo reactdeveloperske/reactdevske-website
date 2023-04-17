@@ -19,7 +19,7 @@ export default function HeroHeader() {
         <Navbar />
       </div>
       <div className="w-full flex flex-col items-center justify-center z-10">
-        <Fade direction='left'>
+        <Fade direction='down'>
         <h1 className="font-montserrat font-bold text-center text-white text-[40px] leading-10 w-[388px] mx-auto mt-20">
           React Developer Community Kenya
         </h1>
@@ -27,8 +27,6 @@ export default function HeroHeader() {
           We are a tech community in Kenya focused on the React JS library and
           its ecosystem.
           </p>
-        </Fade>
-        <Fade direction='right'>
         <div className="flex items-center justify-center mb-44 relative">
           <LinkButton
             className="flex justify-center items-center bg-[#EC0505] w-[307px] h-[61px] rounded-md text-white font-montserrat font-bold"

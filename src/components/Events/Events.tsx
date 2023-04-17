@@ -61,7 +61,7 @@ export default function Events() {
       id="events"
       className="relative flex flex-col items-center justify-center w-full py-16 bg-white md:py-20 gap-y-2 md:gap-y-5"
     >
-      <Fade direction='right'>
+      <Fade direction='down'>
       <h2 className="flex text-2xl  border-b-2 border-slate-400 items-center justify-center font-light tracking-wide">
         Events
       </h2>

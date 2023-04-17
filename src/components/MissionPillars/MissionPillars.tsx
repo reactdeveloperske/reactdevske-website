@@ -5,7 +5,7 @@ import {Fade} from "react-awesome-reveal"
 export default function MissionPillars() {
   return (
     <section className="flex flex-col w-full md:justify-center items-center bg-white md:bg-[#CEEDF4] py-12 space-y-10">
-      <h2 className="md:uppercase border-b-2 border-slate-400  font-bold md:font-light text-2xl md:text-5xl">
+      <h2 className="md:uppercase  font-bold md:font-light text-2xl md:text-5xl">
         Our Mission Pillars
       </h2>
       <div className="flex flex-col md:flex-row md:items-center md:justify-center w-full px-6 space-y-4 md:space-x-6">
