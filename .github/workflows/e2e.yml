@@ -10,9 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Prepare .env file
+        run: |
+          rm -f .env && touch .env
+          echo "NEXT_PUBLIC_FORMSPREE_ID=fake123" >> .env
+          echo "NEXT_PUBLIC_RECAPTCHA_SITE_KEY=123fAkE" >> .env
       - uses: actions/setup-node@v3
         with:
-          node-version: '14.x'
+          node-version: '18.x'
       - name: Install dependencies
         run: npm ci
       - name: Install Playwright Browsers
