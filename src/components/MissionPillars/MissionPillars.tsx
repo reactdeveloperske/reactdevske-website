@@ -15,7 +15,9 @@ export default function MissionPillars() {
           <div className="flex w-1/2 md:w-full">
             <div className="w-full overflow-hidden aspect-w-4 aspect-h-3">
               <Image
-                src={'/images/mentorship-image.jpg'}
+                src={
+                  'https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532588/website-images/mentorship-image_tz0mor.jpg'
+                }
                 alt="Mentorship Image"
                 layout="fill"
               />
@@ -31,7 +33,9 @@ export default function MissionPillars() {
           <div className="flex w-1/2 md:w-full">
             <div className="w-full overflow-hidden aspect-w-4 aspect-h-3">
               <Image
-                src={'/images/learning-image.jpg'}
+                src={
+                  'https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532588/website-images/learning-image_eylqwm.jpg'
+                }
                 alt="Learning Image"
                 layout="fill"
               />
@@ -47,7 +51,9 @@ export default function MissionPillars() {
           <div className="flex w-1/2 md:w-full">
             <div className="w-full overflow-hidden aspect-w-4 aspect-h-3">
               <Image
-                src={'/images/community-image.jpg'}
+                src={
+                  'https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532588/website-images/community-image_pkeqwj.jpg'
+                }
                 alt="Community Image"
                 layout="fill"
               />

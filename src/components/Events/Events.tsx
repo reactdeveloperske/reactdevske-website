@@ -7,7 +7,8 @@ const events: EventData[] = [
     id: 1,
     title: 'Physical Meetups',
     description: 'Physical meetups where we share, learn and network.',
-    image_url: '/images/physical_meetup.jpg',
+    image_url:
+      'https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532589/website-images/physical_meetup_fqkitv.jpg',
     target:
       'https://kommunity.com/reactjs-developer-community-kenya-reactdevske/events',
   },
@@ -16,7 +17,8 @@ const events: EventData[] = [
     title: 'Weekly Online Standups',
     description:
       'Weekly open calls in the community’s Telegram group discussing industry-related topics.',
-    image_url: '/images/weekly_standups.jpg',
+    image_url:
+      'https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532589/website-images/weekly_standups_lg3rth.jpg',
     target: 'https://bit.ly/joinreactdevske',
   },
   {
@@ -24,7 +26,8 @@ const events: EventData[] = [
     title: 'Community Power Sessions',
     description:
       'Community members meet and share technical concepts with other members of the community.',
-    image_url: '/images/community_sessions.jpg',
+    image_url:
+      'https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532589/website-images/community_sessions_xsyd8d.jpg',
     target: 'https://www.youtube.com/channel/UC9_eVcPBk4T-DcZLHpQfy4w/videos',
   },
   {
@@ -40,7 +43,8 @@ const events: EventData[] = [
     title: 'Monthly Online Standups',
     description:
       'Monthly open calls on Google Meet  bringing together people from different communities.',
-    image_url: '/images/physical_meetup.jpg',
+    image_url:
+      'https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532589/website-images/physical_meetup_fqkitv.jpg',
     target:
       'https://kommunity.com/reactjs-developer-community-kenya-reactdevske/events',
   },
@@ -49,7 +53,8 @@ const events: EventData[] = [
     title: 'Community Challenges',
     description:
       'We organize open source challenges to keep the community engaged.',
-    image_url: '/images/physical_meetup.jpg',
+    image_url:
+      'https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532589/website-images/physical_meetup_fqkitv.jpg',
     target: 'https://github.com/reactdeveloperske/community-coding-challenges',
   },
 ];
