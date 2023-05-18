@@ -14,10 +14,12 @@
     "validate": "concurrently --kill-others-on-fail -g -p \"[{name}]\" -n \"prettier,lint,typecheck,build\" \"npm:prettier:check -s\" \"npm:lint -s\" \"npm:typecheck -s\" \"npm:build -s -- --no-lint\""
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
     "@headlessui/react": "^1.7.3",
     "@types/react-google-recaptcha": "^2.1.5",
     "next": "12.3.1",
     "react": "18.1.0",
+    "react-awesome-reveal": "^4.2.3",
     "react-dom": "18.1.0",
     "react-google-recaptcha": "^2.1.0"
   },
