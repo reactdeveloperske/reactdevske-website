@@ -14,3 +14,7 @@ Contributions are always welcome!
 See [`contributing.md`](https://github.com/reactdeveloperske/reactdevske-website/blob/main/CONTRIBUTING.md) for ways to get started.
 
 Please adhere to this project's [`code of conduct`](https://github.com/reactdeveloperske/reactdevske-website/blob/main/CODE_OF_CONDUCT.md).
+
+## Figma design file
+
+Checkout the design file [`HERE`](https://www.figma.com/file/TVwnaDhBGeVdnVKdf6H91C/React-developers-community-website?node-id=741%3A976), feel free to use it to guide your contribution to our site.
