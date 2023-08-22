@@ -1,31 +1,9 @@
-import Image from 'next/image';
 import React from 'react';
-import Logo from '../Logo';
-import githubIcon from '../../../public/img/github-logo.svg';
-import DropdownMenu from './DropdownMenu';
 import LinkButton from '../LinkButton/LinkButton';
-import Link from 'next/link';
-import { HOME } from '../../util/routeConstants';
 
 export default function MobileHero() {
   return (
     <div className="relative">
-      <div className="mx-6 pt-2 pb-5 flex justify-between">
-        <Link href={HOME}>
-          <a>
-            <Logo size={60} />
-          </a>
-        </Link>
-        <a
-          target="_blank"
-          href="https://github.com/reactdeveloperske/reactdevske-website"
-          rel="noopener noreferrer"
-          className="pt-[13px]"
-        >
-          <Image src={githubIcon} alt="" width={35} height={35} />
-        </a>
-        <DropdownMenu />
-      </div>
       <div>
         <h1 className="font-robotoMono font-medium text-4xl text-center mb-2">
           ReactDevsKe
