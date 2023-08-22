@@ -28,6 +28,7 @@ export default function Navbar() {
 
   return (
     <>
+      {/* Desktop Navbar */}
       <div
         className={`transition-all duration-100 hidden md:block ${
           isScrolledToTop ? 'text-white' : 'text-black bg-white shadow-2xl'
@@ -66,6 +67,8 @@ export default function Navbar() {
           </nav>
         </header>
       </div>
+
+      {/* Mobile Navbar */}
       <div
         className={`px-6 py-2 flex justify-between md:hidden  ${
           isScrolledToTop ? '' : 'bg-white shadow-2xl'
