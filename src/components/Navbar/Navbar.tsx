@@ -20,6 +20,9 @@ export default function Navbar() {
   };
 
   useEffect(() => {
+    if (window.scrollY === 0) {
+      setIsScrolledToTop(true);
+    }
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
