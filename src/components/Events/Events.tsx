@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { EventData } from '../../types/index';
 import DisplayRC from './DisplayRC';
-import {Fade} from "react-awesome-reveal"
+import { Fade } from 'react-awesome-reveal';
 
 const events: EventData[] = [
   {
@@ -66,11 +66,11 @@ export default function Events() {
       id="events"
       className="relative flex flex-col items-center justify-center w-full py-16 bg-white md:py-20 gap-y-2 md:gap-y-5"
     >
-      <Fade direction='down'>
-      <h2 className="flex text-2xl  items-center justify-center font-light tracking-wide">
-        Events
-      </h2>
-      <h2 className="pb-2 text-2xl font-bold md:pb-10">Community Events</h2>
+      <Fade direction="down">
+        <h2 className="flex text-2xl  items-center justify-center font-light tracking-wide">
+          Events
+        </h2>
+        <h2 className="pb-2 text-2xl font-bold md:pb-10">Community Events</h2>
       </Fade>
       <div className="grid grid-cols-1 gap-y-4 md:gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 xl:gap-x-8 md:grid-cols-2 bg-[#09AFC6] px-4 md:px-10 lg:px-16 py-8 md:py-14 xl:py-16">
         {events.map((event) => (
