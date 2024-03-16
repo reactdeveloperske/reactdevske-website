@@ -13,6 +13,10 @@
     "typecheck": "tsc --build",
     "validate": "concurrently --kill-others-on-fail -g -p \"[{name}]\" -n \"prettier,lint,typecheck,build\" \"npm:prettier:check -s\" \"npm:lint -s\" \"npm:typecheck -s\" \"npm:build -s -- --no-lint\""
   },
+  "pre-commit": [
+    "precommit-msg",
+    "validate"
+  ],
   "dependencies": {
     "@headlessui/react": "^1.7.3",
     "@types/react-google-recaptcha": "^2.1.5",
@@ -33,6 +37,7 @@
     "eslint-config-next": "12.1.6",
     "eslint-config-prettier": "^8.5.0",
     "postcss": "8.4.14",
+    "pre-commit": "^1.2.2",
     "prettier": "^2.7.1",
     "tailwindcss": "3.1.2",
     "typescript": "^4.8.4"
