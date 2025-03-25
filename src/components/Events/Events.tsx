@@ -75,7 +75,7 @@ export default function Events() {
           />
         ))}
 
-        <div className="flex items-center justify-center pt-1 tracking-wide text-white md:pt-0 md:text-right md:absolute md:bottom-24 md:right-10 2xl:bottom-26 lg:right-16">
+        <div className="flex items-center justify-center pt-1 tracking-wide mt-4 text-white md:pt-0 md:text-right md:absolute md:bottom-24 md:right-10 2xl:bottom-26 lg:right-16">
           <Link href="https://kommunity.com/reactjs-developer-community-kenya-reactdevske/events">
             <a
               target="_blank"

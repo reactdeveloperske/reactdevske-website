@@ -1,22 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Logo from '../Logo/Logo';
 
 import { ABOUT, CONTACT, EVENTS, HOME } from '../../util/routeConstants';
 import LinkButton from '../LinkButton/LinkButton';
+import DropdownMenu from './DropdownMenu';
 
 export default function Navbar() {
+  const [screenWidth, setScreenWidth] = useState<number | null>(null);
+
+  const breakpoint = 768;
+
+  useEffect(() => {
+    setScreenWidth(window.innerWidth);
+
+    const handleResize = () => setScreenWidth(window.innerWidth);
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  if (!screenWidth) return null;
   return (
-    <>
-      <header className="lg:pl-[49px]  w-full bg-black bg-opacity-50 z-10">
-        <nav className="nav py-4 pl-5 flex flex-col md:flex-row justify-around items-center">
-          <div>
-            <Link href={HOME}>
-              <a>
-                <Logo size={60} />
-              </a>
-            </Link>
-          </div>
+    <header className="lg:pl-[49px] fixed top-0  w-full bg-black bg-opacity-50 z-10">
+      <nav className="nav py-2 md:py-4  md:pl-5 flex flex-row justify-around items-center">
+        <div>
+          <Link href={HOME}>
+            <a>
+              <Logo size={screenWidth > breakpoint ? 60: 45} />
+            </a>
+          </Link>
+        </div>
+       {screenWidth > breakpoint ? (
+         <div className='flex-1  flex flex-row justify-end gap-[20%] items-center max-w-[60%]'>
           <div className="">
             <ul className="font-montserrat text-base text-white flex flex-row justify-between items-center md:space-x-[30px]">
               <a href={ABOUT}>
@@ -40,8 +57,10 @@ export default function Navbar() {
               Join Community
             </LinkButton>
           </div>
-        </nav>
-      </header>
-    </>
+        </div>): (
+          <DropdownMenu/>
+        )}
+      </nav>
+    </header>
   );
 }

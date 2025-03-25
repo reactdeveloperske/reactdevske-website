@@ -23,9 +23,8 @@ export default function Home() {
         />
       </Head>
       <main className="">
-      <div className="fixed w-[100%] top-0 z-50">
         <Navbar />
-      </div>
+    
         <HeroHeader />
         <div className="flex flex-col py-12 bg-[#030e30] text-white">
           <AboutUs />
