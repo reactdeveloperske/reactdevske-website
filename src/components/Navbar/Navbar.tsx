@@ -8,7 +8,7 @@ import LinkButton from '../LinkButton/LinkButton';
 export default function Navbar() {
   return (
     <>
-      <header className="lg:pl-[49px] w-full fixed top-0 bg-black bg-opacity-50 z-10">
+      <header className="lg:pl-[49px]  w-full bg-black bg-opacity-50 z-10">
         <nav className="nav py-4 pl-5 flex flex-col md:flex-row justify-around items-center">
           <div>
             <Link href={HOME}>

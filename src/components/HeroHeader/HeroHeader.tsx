@@ -20,7 +20,7 @@ export default function HeroHeader() {
   if (!screenWidth) return null;
 
   return (
-    <div id="hero" className="pt-2 bg-[#060b17]">
+    <div id="hero" className="pt-2  bg-[#060b17]">
       {screenWidth < breakpoint ? <MobileHero /> : <DesktopHero />}
     </div>
   );

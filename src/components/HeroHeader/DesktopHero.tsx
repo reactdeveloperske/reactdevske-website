@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../Navbar';
 import LinkButton from '../LinkButton/LinkButton';
 
 export default function HeroHeader() {
@@ -12,9 +11,7 @@ export default function HeroHeader() {
         
       }}
     >
-      <div className="relative">
-        <Navbar />
-      </div>
+      
       <div className="w-full flex flex-col items-center justify-center z-10 bg-black bg-opacity-30">
         <h1 className="font-montserrat font-bold text-center text-white text-[40px] leading-10 w-[388px] mx-auto mt-24">
           React Developer Community Kenya
