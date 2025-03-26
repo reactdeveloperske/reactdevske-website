@@ -25,15 +25,14 @@ export default function Navbar() {
   return (
     <header className="lg:pl-[49px] fixed top-0  w-full bg-black text-white justify-between bg-opacity-50 z-10">
       <nav className="nav py-2 md:py-4  md:pl-5 flex flex-row justify-between md:justify-around px-4 items-center">
-        <div>
+        <div className="">
           <Link href={HOME}>
             <a>
               <Logo size={60} />
             </a>
           </Link>
         </div>
-       {screenWidth > breakpoint ? (
-         <div className='flex-1  flex flex-row justify-end gap-[20%] items-center max-w-[60%]'>
+        {screenWidth > breakpoint && (
           <div className="">
             <ul className="font-montserrat text-base text-white flex flex-row justify-between items-center md:space-x-[30px]">
               <a href={ABOUT}>
@@ -47,6 +46,8 @@ export default function Navbar() {
               </a>
             </ul>
           </div>
+        )}
+        {screenWidth > breakpoint && (
           <div>
             <LinkButton
               className="flex justify-center items-center bg-[#EC0505] w-[203px] h-[46px] rounded-md text-base text-white font-montserrat font-bold"
@@ -57,9 +58,8 @@ export default function Navbar() {
               Join Community
             </LinkButton>
           </div>
-        </div>): (
-          <DropdownMenu/>
         )}
+        {screenWidth <= breakpoint && <DropdownMenu />}
       </nav>
     </header>
   );
