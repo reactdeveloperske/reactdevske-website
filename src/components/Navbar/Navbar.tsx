@@ -23,12 +23,12 @@ export default function Navbar() {
 
   if (!screenWidth) return null;
   return (
-    <header className="lg:pl-[49px] fixed top-0  w-full bg-black bg-opacity-50 z-10">
-      <nav className="nav py-2 md:py-4  md:pl-5 flex flex-row justify-around items-center">
+    <header className="lg:pl-[49px] fixed top-0  w-full bg-black text-white justify-between bg-opacity-50 z-10">
+      <nav className="nav py-2 md:py-4  md:pl-5 flex flex-row justify-between md:justify-around px-4 items-center">
         <div>
           <Link href={HOME}>
             <a>
-              <Logo size={screenWidth > breakpoint ? 60: 45} />
+              <Logo size={60} />
             </a>
           </Link>
         </div>

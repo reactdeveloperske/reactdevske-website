@@ -4,7 +4,7 @@ import LinkButton from '../LinkButton/LinkButton';
 export default function HeroHeader() {
   return (
     <div
-      className="relative bg-cover bg-center bg-no-repeat"
+      className="relative bg-cover  bg-center bg-no-repeat"
       style={{
         backgroundImage: `url('/images/hero-image.jpg')`,
         backgroundColor: '#160c0c',
@@ -21,7 +21,7 @@ export default function HeroHeader() {
         </p>
         <div className="flex items-center justify-center mb-44 relative">
           <LinkButton
-            className="flex justify-center items-center bg-[#EC0505] w-[307px] h-[61px] rounded-md text-white font-montserrat font-bold"
+            className="flex justify-center items-center bg-[#EC0505] hover:bg-[#e12e2e] transition-all duration:200 hover:scale-105 w-[307px] h-[61px] rounded-md text-white font-montserrat font-bold"
             href="https://bit.ly/joinreactdevske"
             target="_blank"
             rel="noopener noreferrer"

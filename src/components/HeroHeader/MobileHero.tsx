@@ -6,13 +6,15 @@ import backgroundImage from '/public/images/hero-image.jpg'; // Add your backgro
 export default function MobileHero() {
   return (
     <div
-      className="relative bg-black bg-cover bg-center text-white mt-0"
+      className="flex h-[80vh] bg-black bg-cover bg-center text-white mt-0"
       style={{
         backgroundImage: `url(${backgroundImage.src})`
       }}
     >
       
-      <div className="bg-black bg-opacity-50 p-6 rounded-md"> {/* Adds opacity to make text more legible */}
+      <div 
+      className="bg-black h-full justify-end items-center flex-col bg-opacity-50 p-6 rounded-md flex   bg-cover bg-center text-white mt-0"
+      > {/* Adds opacity to make text more legible */}
         <h1 className="font-robotoMono font-medium text-2xl text-center mb-2 text-white">
           React Developer Community Kenya 
         </h1>
@@ -21,7 +23,7 @@ export default function MobileHero() {
             href="https://bit.ly/joinreactdevske"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-center items-center bg-[#12A04E] text-white w-44 rounded-md"
+            className="flex justify-center items-center bg-[#12A04E] text-white px-10 py-2 rounded-md"
           >
             Join ReactJS Kenya
           </LinkButton>
