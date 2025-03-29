@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import DesktopVersion from './DesktopVersion';
+import DesktopVersion from './DesktopVersion';
 import MobileVersion from './MobileVersion';
 import Footer from './Footer';
 
@@ -25,7 +25,7 @@ export default function ContactUs() {
       <h2 className="font-montserrat text-lg uppercase w-fit mx-auto pt-5 font-semibold">
         Contact us
       </h2>
-      {/* <DesktopVersion /> */}
+      <DesktopVersion />
       <Footer/>
     </section>
   );
