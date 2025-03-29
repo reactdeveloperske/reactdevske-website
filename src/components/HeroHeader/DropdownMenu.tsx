@@ -1,16 +1,22 @@
 import React from 'react';
-import { FaInfoCircle, FaCalendarAlt, FaPhone, FaBars, FaTimes } from 'react-icons/fa'; // Importing icons
+import {
+  FaInfoCircle,
+  FaCalendarAlt,
+  FaPhone,
+  FaBars,
+  FaTimes,
+} from 'react-icons/fa'; // Importing icons
 import { ABOUT, CONTACT, EVENTS } from '../../util/routeConstants';
 import { Menu } from '@headlessui/react';
 
 export default function DropdownMenu() {
   return (
-    <Menu >
+    <Menu>
       <Menu.Button>
         {({ open }) =>
           open ? (
             <div className="inline-flex justify-center items-center w-[30px] ">
-              <FaTimes size={20} /> 
+              <FaTimes size={20} />
             </div>
           ) : (
             <FaBars size={30} />
@@ -27,7 +33,8 @@ export default function DropdownMenu() {
                   active && 'bg-green-400 text-black'
                 }`}
               >
-                <FaInfoCircle size={22} /> {/* About us icon from react-icons */}
+                <FaInfoCircle size={22} />{' '}
+                {/* About us icon from react-icons */}
                 <p className="inline-block ml-[10px]">About us</p>
               </a>
             )}

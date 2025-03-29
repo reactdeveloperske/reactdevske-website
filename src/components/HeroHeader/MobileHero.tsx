@@ -13,7 +13,7 @@ export default function MobileHero() {
     <div
       className="relative bg-black bg-cover bg-center text-white mt-0"
       style={{
-        backgroundImage: `url(${backgroundImage.src})`
+        backgroundImage: `url(${backgroundImage.src})`,
       }}
     >
       <div className="mx-6 pt- pb-5 flex justify-between">
@@ -32,9 +32,11 @@ export default function MobileHero() {
         </a>
         <DropdownMenu />
       </div>
-      <div className="bg-black bg-opacity-50 p-6 rounded-md"> {/* Adds opacity to make text more legible */}
+      <div className="bg-black bg-opacity-50 p-6 rounded-md">
+        {' '}
+        {/* Adds opacity to make text more legible */}
         <h1 className="font-robotoMono font-medium text-2xl text-center mb-2 text-white">
-          React Developer Community Kenya 
+          React Developer Community Kenya
         </h1>
         <div className="flex justify-center items-center mb-[34px]">
           <LinkButton

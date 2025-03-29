@@ -34,7 +34,10 @@ export default function MobileVersion() {
       <h1 className="text-black font-robotoMono text-4xl w-fit mx-auto py-4 font-bold">
         Let's talk React
       </h1>
-      <form className="w-4/5 mx-auto md:w-2/3 bg-[#0096c7]" onSubmit={handleSubmit}>
+      <form
+        className="w-4/5 mx-auto md:w-2/3 bg-[#0096c7]"
+        onSubmit={handleSubmit}
+      >
         <label
           htmlFor="name"
           className="border border-black w-full rounded-md p-2 my-2 flex"

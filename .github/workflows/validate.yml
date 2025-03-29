@@ -1,9 +1,9 @@
 name: Lint, Format and Build
 on:
   push:
-    branches: [main, develop]
+    branches: [main, develop, prod]
   pull_request:
-    branches: [main, develop]
+    branches: [main, develop, prod]
 jobs:
   validate:
     timeout-minutes: 60

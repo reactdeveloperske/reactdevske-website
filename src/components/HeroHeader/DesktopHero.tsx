@@ -9,7 +9,6 @@ export default function HeroHeader() {
       style={{
         backgroundImage: `url('/images/hero-image.jpg')`,
         backgroundColor: '#160c0c',
-        
       }}
     >
       <div className="relative">
@@ -20,7 +19,8 @@ export default function HeroHeader() {
           React Developer Community Kenya
         </h1>
         <p className="font-montserrat text-white w-[570px] mx-auto text-center mt-5 mb-[45px]">
-          We are a tech community in Kenya focused on the React JS library and its ecosystem.
+          We are a tech community in Kenya focused on the React JS library and
+          its ecosystem.
         </p>
         <div className="flex items-center justify-center mb-44 relative">
           <LinkButton

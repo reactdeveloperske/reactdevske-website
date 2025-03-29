@@ -5,17 +5,20 @@ export default function MissionPillars() {
     {
       count: '01',
       label: 'Mentorship',
-      description: 'Guiding the next generation of developers through professional mentorship and support.',
+      description:
+        'Guiding the next generation of developers through professional mentorship and support.',
     },
     {
       count: '02',
       label: 'Learning',
-      description: 'Empowering developers with resources and knowledge to continually grow their skills.',
+      description:
+        'Empowering developers with resources and knowledge to continually grow their skills.',
     },
     {
       count: '03',
       label: 'Community',
-      description: 'Building an inclusive, diverse, and supportive community of developers.',
+      description:
+        'Building an inclusive, diverse, and supportive community of developers.',
     },
   ];
 
@@ -32,8 +35,11 @@ export default function MissionPillars() {
           } items-center justify-between w-full sm:w-5/6 md:w-3/4 lg:w-2/3 px-4 md:px-0 space-y-6 md:space-y-0 md:space-x-8`}
         >
           <div className="flex flex-col w-full md:w-1/2 text-center md:text-left">
-            <Pillar count={pillar.count} label={pillar.label} description={pillar.description}/>
-            
+            <Pillar
+              count={pillar.count}
+              label={pillar.label}
+              description={pillar.description}
+            />
           </div>
           <div className="flex w-full md:w-1/2 justify-center md:justify-start">
             {/* <div

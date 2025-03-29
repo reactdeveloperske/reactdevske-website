@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import DesktopVersion from './DesktopVersion';
-import MobileVersion from './MobileVersion';
 import Footer from './Footer';
 
 export default function ContactUs() {
   const [screenWidth, setScreenWidth] = useState<number | null>(null);
-
-  const breakpoint = 1024;
 
   useEffect(() => {
     setScreenWidth(window.innerWidth);
@@ -26,7 +23,7 @@ export default function ContactUs() {
         Contact us
       </h2>
       <DesktopVersion />
-      <Footer/>
+      <Footer />
     </section>
   );
 }
