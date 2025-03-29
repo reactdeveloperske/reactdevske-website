@@ -6,7 +6,7 @@ import backgroundImage from '/public/images/hero-image.jpg'; // Add your backgro
 export default function MobileHero() {
   return (
     <div
-      className="flex h-[80vh] bg-black bg-cover bg-center text-white mt-0"
+      className="flex h-[50vh] items-center justify-center bg-black bg-cover bg-center text-white mt-0"
       style={{
         backgroundImage: `url(${backgroundImage.src})`
       }}
