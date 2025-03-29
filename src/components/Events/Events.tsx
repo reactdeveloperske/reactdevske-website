@@ -63,7 +63,7 @@ export default function Events() {
     >
   
       <h2 className="pb-2 text-3xl text-white font-bold md:pb-10">Community Events</h2>
-      <div className="grid grid-cols-1 gap-y-4 md:gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8 md:grid-cols-2 px-4 md:px-10 lg:px-16 py-8 md:py-14 xl:py-16">
+      <div className="grid grid-cols-1 gap-y-4  md:gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8 md:grid-cols-2 px-4 md:px-10 lg:px-16 pt-8 md:pt-14 xl:pt-16">
         {events.map((event) => (
           <DisplayRC
             key={event.id}
@@ -74,18 +74,17 @@ export default function Events() {
             target={event.target}
           />
         ))}
-
-        <div className="flex items-center justify-center pt-1 tracking-wide mt-4 text-white md:pt-0 md:text-right md:absolute md:bottom-24 md:right-10 2xl:bottom-26 lg:right-16">
+      </div>
+      <div className="flex items-start justify-center md:justify-end tracking-wide mt-4  px-4 md:px-10 lg:px-16  w-full text-white pb-10 md:pb-14 xl:pb-16">
           <Link href="https://kommunity.com/reactjs-developer-community-kenya-reactdevske/events">
             <a
               target="_blank"
-              className="bg-[#61dafb] text-black px-6 py-3 rounded-full font-semibold text-lg hover:bg-[#48cae4] transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+              className="bg-[#61dafb] text-black px-6 w-full max-w-[350px] text-center py-3 rounded-md font-semibold text-lg hover:bg-[#48cae4] transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
             >
               See More Events
             </a>
           </Link>
         </div>
-      </div>
     </section>
   );
 }
