@@ -13,7 +13,7 @@ test.describe('Test Hero Header Navigation Links', () => {
   });
 
   test('Events link should navigate to Events section', async ({ page }) => {
-    await page.getByRole('link', { name: 'Events' }).click();
+    await page.getByRole('link', { name: 'Events', exact: true }).click();
     await expect(page).toHaveURL('/#events');
   });
 

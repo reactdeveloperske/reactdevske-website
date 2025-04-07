@@ -27,9 +27,9 @@ export default function Navbar() {
       <nav className="nav py-2 md:py-4  md:pl-5 flex flex-row justify-between md:justify-around px-4 items-center">
         <div className="">
           <Link href={HOME}>
-            <a>
+            
               <Logo size={60} />
-            </a>
+            
           </Link>
         </div>
         {screenWidth > breakpoint && (
