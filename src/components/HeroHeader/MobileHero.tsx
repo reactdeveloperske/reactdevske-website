@@ -1,4 +1,3 @@
-
 import React from 'react';
 import LinkButton from '../LinkButton/LinkButton';
 import backgroundImage from '/public/images/hero-image.jpg'; // Add your background image here
@@ -11,10 +10,9 @@ export default function MobileHero() {
         backgroundImage: `url(${backgroundImage.src})`,
       }}
     >
-      
-      <div 
-      className="bg-black pt-[20vh] h-full justify-end items-center pb-[5vh] flex-col bg-opacity-50 p-6 rounded-md flex   bg-cover bg-center text-white mt-0"
-      > {/* Adds opacity to make text more legible */}
+      <div className="bg-black pt-[20vh] h-full justify-end items-center pb-[5vh] flex-col bg-opacity-50 p-6 rounded-md flex   bg-cover bg-center text-white mt-0">
+        {' '}
+        {/* Adds opacity to make text more legible */}
         <h1 className="font-robotoMono font-medium text-2xl text-center mb-2 text-white">
           React Developer Community Kenya
         </h1>

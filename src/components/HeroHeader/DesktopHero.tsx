@@ -10,7 +10,6 @@ export default function HeroHeader() {
         backgroundColor: '#160c0c',
       }}
     >
-      
       <div className="w-full flex py-20 flex-col items-center justify-center z-10 bg-black bg-opacity-80">
         <h1 className="font-montserrat font-bold text-center text-white text-[40px] leading-10 w-[388px] mx-auto mt-24">
           React Developer Community Kenya
