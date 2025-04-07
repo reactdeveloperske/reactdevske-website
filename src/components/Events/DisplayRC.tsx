@@ -31,8 +31,8 @@ export default function DisplayRC({
         />
       </div>
       <h2 className="text-lg md:text-xl font-bold cursor-pointer hover:text-[#09AFC6]">
-        <Link href={target}>
-          <a target="_blank">{title}</a>
+        <Link href={target} target="_blank">
+          {title}
         </Link>
       </h2>
       <p className="flex justify-center text-md md:pb-1">{description}</p>
