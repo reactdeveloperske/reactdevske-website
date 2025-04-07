@@ -75,16 +75,15 @@ export default function Events() {
             target={event.target}
           />
         ))}
-
-        <div className="flex items-center justify-center pt-1 tracking-wide text-white md:pt-0 md:text-right md:absolute md:bottom-24 md:right-10 2xl:bottom-26 lg:right-16">
-          <Link
-            href="https://kommunity.com/reactjs-developer-community-kenya-reactdevske/events"
-            className="bg-[#61dafb] text-black px-6 py-3 rounded-full font-semibold text-lg hover:bg-[#48cae4] transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
-            target="_blank"
-          >
-            See More Events
-          </Link>
-        </div>
+      </div>
+      <div className="flex items-start justify-center md:justify-end tracking-wide mt-4 px-4 md:px-10 lg:px-16 w-full text-white pb-10 md:pb-14 xl:pb-16">
+        <Link
+          href="https://kommunity.com/reactjs-developer-community-kenya-reactdevske/events"
+          target="_blank"
+          className="bg-[#61dafb] text-black px-6 w-full max-w-[350px] text-center py-3 rounded-md font-semibold text-lg hover:bg-[#48cae4] transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+        >
+          See More Events
+        </Link>
       </div>
     </section>
   );
