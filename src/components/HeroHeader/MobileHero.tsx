@@ -33,7 +33,7 @@ export default function MobileHero() {
         <DropdownMenu />
       </div>
       <div className="bg-black bg-opacity-50 p-6 rounded-md"> {/* Adds opacity to make text more legible */}
-        <h1 className="font-robotoMono font-medium text-2xl text-center mb-2 text-white">
+        <h1 className="font-roboto-mono font-medium text-2xl text-center mb-2 text-white">
           React Developer Community Kenya 
         </h1>
         <div className="flex justify-center items-center mb-[34px]">
