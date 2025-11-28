@@ -8,9 +8,6 @@ export default function HeroHeader() {
   const breakpoint = 768;
 
   useEffect(() => {
-    // Defer the initial set to avoid synchronous setState inside the effect
-    // which can cause cascading renders. Use requestAnimationFrame so the
-    // update runs after the browser paints.
     const rafId = requestAnimationFrame(() =>
       setScreenWidth(window.innerWidth)
     );

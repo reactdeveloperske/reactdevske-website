@@ -17,7 +17,7 @@ jobs:
           echo "NEXT_PUBLIC_RECAPTCHA_SITE_KEY=123fAkE" >> .env
       - uses: actions/setup-node@v6
         with:
-          node-version: '24'
+          node-version: '24.x'
       - name: Install dependencies
         run: npm ci
       - name: Install Playwright Browsers

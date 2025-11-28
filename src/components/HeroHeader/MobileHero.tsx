@@ -1,6 +1,4 @@
 import LinkButton from '../LinkButton/LinkButton';
-// Use the `public/` folder via a URL path (no import).
-// The image is served from `/images/hero-image.jpg`.
 
 export default function MobileHero() {
   return (
