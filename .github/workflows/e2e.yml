@@ -9,22 +9,22 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Prepare .env file
         run: |
           rm -f .env && touch .env
           echo "NEXT_PUBLIC_FORMSPREE_ID=fake123" >> .env
           echo "NEXT_PUBLIC_RECAPTCHA_SITE_KEY=123fAkE" >> .env
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: '20.x'
+          node-version: '24'
       - name: Install dependencies
         run: npm ci
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests
         run: npm run test
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         if: always()
         with:
           name: playwright-report
