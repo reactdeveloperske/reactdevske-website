@@ -1,13 +1,13 @@
-import React from 'react';
 import LinkButton from '../LinkButton/LinkButton';
-import backgroundImage from '/public/images/hero-image.jpg'; // Add your background image here
+// Use the `public/` folder via a URL path (no import).
+// The image is served from `/images/hero-image.jpg`.
 
 export default function MobileHero() {
   return (
     <div
       className="flex items-center justify-center bg-black bg-cover bg-center text-white mt-0"
       style={{
-        backgroundImage: `url(${backgroundImage.src})`,
+        backgroundImage: `url('/images/hero-image.jpg')`,
       }}
     >
       <div className="bg-black pt-[20vh] h-full justify-end items-center pb-[5vh] flex-col bg-opacity-50 p-6 rounded-md flex   bg-cover bg-center text-white mt-0">

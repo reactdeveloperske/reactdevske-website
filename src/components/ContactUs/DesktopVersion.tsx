@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { useState } from 'react';
 
 import { useForm, ValidationError } from '@formspree/react';
@@ -29,10 +28,10 @@ export default function DesktopVersion() {
 
   return (
     <>
-      <h1 className="hidden lg:block font-montserrat text-[32px] font-[900] w-fit mx-auto py-4">
+      <h1 className="hidden lg:block font-montserrat text-[32px] font-black w-fit mx-auto py-4">
         Have an interesting idea we should discuss?
       </h1>
-      <div className="max-w-[800px] mx-auto pt-[36px] pb-[46px] rounded-[10px]">
+      <div className="max-w-[800px] mx-auto pt-9 pb-[46px] rounded-[10px]">
         <form className="mx-auto w-3/4" onSubmit={handleSubmit}>
           <label
             htmlFor="name"

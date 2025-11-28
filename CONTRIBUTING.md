@@ -28,7 +28,6 @@ Please note we have a [code of conduct](https://github.com/reactdeveloperske/rea
 If you're ready to contribute and create your PR, it will help to set up a local environment so you can see your changes.
 
 1. Set up your development environment
-
    - install your favorite text editor/IDE
    - install [Nodejs](nodejs.org)
 
