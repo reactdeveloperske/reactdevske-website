@@ -44,7 +44,7 @@ export default function DesktopVersion() {
             type="text"
             name="name"
             placeholder={'Jane Doe'}
-            className="border border-[#CEEDF4] w-full rounded-lg px-4 py-3 mb-5 placeholder-[#7E7979] outline-none font-montserrat text-base"
+            className="border border-[#CEEDF4] w-full rounded-lg px-4 py-3 mb-5 placeholder-[#7E7979] outline-none font-montserrat text-base bg-white"
             required
           />
           <ValidationError prefix="Name" field="name" errors={state.errors} />
@@ -59,7 +59,7 @@ export default function DesktopVersion() {
             type="email"
             name="email"
             placeholder={'you@example.com'}
-            className="border border-[#CEEDF4] w-full rounded-lg px-4 py-3 mb-5 outline-none placeholder-[#7E7979] font-montserrat text-base"
+            className="border border-[#CEEDF4] w-full rounded-lg px-4 py-3 mb-5 outline-none placeholder-[#7E7979] font-montserrat text-base bg-white"
             required
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
@@ -73,7 +73,7 @@ export default function DesktopVersion() {
             id="message"
             name="message"
             placeholder="Hello, I'm getting in touch ..."
-            className="border border-[#CEEDF4] w-full rounded-lg px-4 py-[22px] mb-9 h-[178px] resize-none outline-none placeholder-[#7E7979] font-montserrat text-base"
+            className="border border-[#CEEDF4] w-full rounded-lg px-4 py-[22px] mb-9 h-[178px] resize-none outline-none placeholder-[#7E7979] font-montserrat text-base bg-white"
             required
           />
 

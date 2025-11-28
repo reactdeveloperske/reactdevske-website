@@ -46,7 +46,7 @@ export default function MobileVersion() {
             type="text"
             name="name"
             placeholder="Name"
-            className=" placeholder-black outline-none grow ml-8 font-robotoMono text-base bg-[#0096c7]"
+            className=" placeholder-black outline-none grow ml-8 font-robotoMono text-base bg-white text-black"
             required
           />
         </label>
@@ -68,7 +68,7 @@ export default function MobileVersion() {
             type="email"
             placeholder="Email"
             name="email"
-            className="inline-block ml-2 outline-none grow placeholder-black font-robotoMono text-base bg-[#0096c7]"
+            className="inline-block ml-2 outline-none grow placeholder-black font-robotoMono text-base bg-white text-black"
             required
           />
         </label>
@@ -84,7 +84,7 @@ export default function MobileVersion() {
           <textarea
             placeholder="Message"
             name="message"
-            className=" inline-block ml-2 h-[270px] resize-none outline-none grow placeholder-black font-robotoMono text-base bg-[#0096c7]"
+            className=" inline-block ml-2 h-[270px] resize-none outline-none grow placeholder-black font-robotoMono text-base bg-white text-black"
             required
           ></textarea>
         </label>

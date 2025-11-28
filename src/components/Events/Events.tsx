@@ -80,7 +80,7 @@ export default function Events() {
         <Link
           href="https://kommunity.com/reactjs-developer-community-kenya-reactdevske/events"
           target="_blank"
-          className="bg-[#61dafb] text-black px-6 w-full max-w-[350px] text-center py-3 rounded-md font-semibold text-lg hover:bg-[#48cae4] transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+          className="bg-[#61dafb] text-black! px-6 w-full max-w-[350px] text-center py-3 rounded-md font-semibold text-lg hover:bg-[#48cae4] transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
         >
           See More Events
         </Link>

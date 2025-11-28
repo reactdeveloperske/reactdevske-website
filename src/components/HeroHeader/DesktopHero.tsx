@@ -1,4 +1,3 @@
-import React from 'react';
 import LinkButton from '../LinkButton/LinkButton';
 
 export default function HeroHeader() {
@@ -20,7 +19,7 @@ export default function HeroHeader() {
         </p>
         <div className="flex  items-center justify-center  relative">
           <LinkButton
-            className="flex justify-center items-center bg-[#EC0505] hover:bg-[#e12e2e] transition-all duration:200 hover:scale-105 w-[307px] h-[61px] rounded-md text-white font-montserrat font-bold"
+            className="flex justify-center items-center bg-[#EC0505] hover:bg-[#e12e2e] transition-all duration:200 hover:scale-105 w-[307px] h-[61px] rounded-md text-white! font-montserrat font-bold"
             href="https://bit.ly/joinreactdevske"
             target="_blank"
             rel="noopener noreferrer"

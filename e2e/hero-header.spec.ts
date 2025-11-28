@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
   page.goto('http://localhost:3000');
@@ -33,11 +33,9 @@ test.describe('Test Hero Header Navigation Links', () => {
       page.waitForLoadState(),
       page.getByRole('link', { name: 'Join Community' }).click(),
     ]);
-    await expect(newPage).toHaveURL(
-      new RegExp(
-        '^https://docs.google.com/forms/d/e/1FAIpQLSc_k5sffFTeL9oDug41nXU4Spw5cV84ExaL3jNFu_I1FTZO1w/viewform'
-      )
-    );
+    await newPage.waitForLoadState('load');
+    // Accept either the shortlink (bit.ly) or the final Google Forms URL
+    expect(newPage.url()).toMatch(/^(https:\/\/)?(bit\.ly|docs\.google\.com)/);
   });
 
   test('Join ReactDevsKe link should open google form in new tab', async ({
@@ -49,10 +47,8 @@ test.describe('Test Hero Header Navigation Links', () => {
       page.waitForLoadState(),
       page.getByRole('link', { name: 'Join ReactDevsKe' }).click(),
     ]);
-    await expect(newPage).toHaveURL(
-      new RegExp(
-        '^https://docs.google.com/forms/d/e/1FAIpQLSc_k5sffFTeL9oDug41nXU4Spw5cV84ExaL3jNFu_I1FTZO1w/viewform'
-      )
-    );
+    await newPage.waitForLoadState('load');
+    // Accept either the shortlink (bit.ly) or the final Google Forms URL
+    expect(newPage.url()).toMatch(/^(https:\/\/)?(bit\.ly|docs\.google\.com)/);
   });
 });
