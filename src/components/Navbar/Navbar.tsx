@@ -28,7 +28,7 @@ export default function Navbar() {
 
   if (!screenWidth) return null;
   return (
-    <header className="lg:pl-[49px] fixed top-0 backdrop-blur-md w-full bg-black text-white justify-between bg-opacity-50 z-10">
+    <header className="lg:pl-[49px] fixed top-0 backdrop-blur-md w-full bg-black text-white justify-between bg-opacity-50 z-20">
       <nav className="nav py-2 md:py-4  md:pl-5 flex flex-row justify-between md:justify-around px-4 items-center">
         <div className="">
           <Link href={HOME}>

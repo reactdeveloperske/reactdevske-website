@@ -9,7 +9,7 @@ export default function MobileHero() {
       }}
     >
       {/* overlay for legibility using Tailwind */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/50 pointer-events-none" />
 
       <div className="relative z-10 pt-[20vh] h-full justify-end items-center pb-[5vh] flex-col p-6 rounded-md flex text-white mt-0">
         {/* Adds opacity to make text more legible */}

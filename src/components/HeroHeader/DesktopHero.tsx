@@ -10,7 +10,7 @@ export default function HeroHeader() {
       }}
     >
       {/* Translucent overlay to darken image while keeping it visible */}
-      <div className="absolute inset-0 bg-black/80" />
+      <div className="absolute inset-0 bg-black/80 pointer-events-none" />
 
       <div className="w-full flex py-20 flex-col items-center justify-center relative z-10">
         <h1 className="font-montserrat font-bold text-center text-white text-[40px] leading-10 w-[388px] mx-auto mt-24">
