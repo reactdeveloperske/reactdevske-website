@@ -5,7 +5,7 @@ const Footer = () => {
     <footer
       id="contacts"
       aria-label="React Devs KE Socials"
-      className="py-6 bg-[#03045e] border-t-[2px] border-[#c0c0d6]"
+      className="py-6 bg-[#03045e] border-t-2 border-[#c0c0d6]"
     >
       <div className="flex flex-col justify-center gap-9">
         {/* Social media icons with links */}

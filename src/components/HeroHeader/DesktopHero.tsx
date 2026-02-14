@@ -7,8 +7,6 @@ export default function HeroHeader() {
       className="relative bg-cover  bg-center bg-no-repeat"
       style={{
         backgroundImage: `url('/images/hero-image.jpg')`,
-        backgroundColor: '#160c0c',
-        
       }}
     >
       
@@ -16,7 +14,7 @@ export default function HeroHeader() {
         <h1 className="font-montserrat font-bold text-center text-white text-[40px] leading-10 w-[388px] mx-auto mt-24">
           React Developer Community Kenya
         </h1>
-        <p className="font-montserrat text-white w-[570px] mx-auto text-center mt-5 mb-[45px]">
+        <p className="font-montserrat text-white max-w-[570px] mt-5 mb-[45px]">
           We are a tech community in Kenya focused on the React JS library and its ecosystem.
         </p>
         <div className="flex  items-center justify-center  relative">
