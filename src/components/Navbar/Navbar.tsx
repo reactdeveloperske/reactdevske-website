@@ -1,66 +1,91 @@
-import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
+'use client'
+
+import React from 'react'
+import Link from 'next/link'
+import { Menu, X } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 import Logo from '../Logo/Logo';
 
-import { ABOUT, CONTACT, EVENTS, HOME } from '../../util/routeConstants';
-import LinkButton from '../LinkButton/LinkButton';
-import DropdownMenu from './DropdownMenu';
+const menuItems = [
+  { name: 'Home', to: '/' },
+  { name: 'Community', to: '/community' },         
+  { name: 'Workshops & Events', to: '/events' },  
+  { name: 'Resources', to: '/resources' },        
+  { name: 'Contribute', to: '/contribute' },      
+  { name: 'About Us', to: '/about' },             
+]
+
 
 export default function Navbar() {
-  const [screenWidth, setScreenWidth] = useState<number | null>(null);
+  const [menuState, setMenuState] = React.useState(false)
 
-  const breakpoint = 768;
-
-  useEffect(() => {
-    setScreenWidth(window.innerWidth);
-
-    const handleResize = () => setScreenWidth(window.innerWidth);
-
-    window.addEventListener('resize', handleResize);
-
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  if (!screenWidth) return null;
   return (
-    <header className="lg:pl-[49px] fixed top-0 backdrop-blur-md w-full bg-black text-white justify-between bg-opacity-50 z-10">
-      <nav className="nav py-2 md:py-4  md:pl-5 flex flex-row justify-between md:justify-around px-4 items-center">
-        <div className="">
-          <Link href={HOME}>
-            <a>
-              <Logo size={60} />
-            </a>
-          </Link>
-        </div>
-        {screenWidth > breakpoint && (
-          <div className="">
-            <ul className="font-montserrat text-base text-white flex flex-row justify-between items-center md:space-x-[30px]">
-              <a href={ABOUT}>
-                <li>About us</li>
-              </a>
-              <a href={EVENTS}>
-                <li>Events</li>
-              </a>
-              <a href={CONTACT}>
-                <li>Contact</li>
-              </a>
-            </ul>
-          </div>
-        )}
-        {screenWidth > breakpoint && (
-          <div>
-            <LinkButton
-              className="flex justify-center items-center bg-[#EC0505] w-[203px] h-[46px] rounded-md text-base text-white font-montserrat font-bold"
-              href="https://bit.ly/joinreactdevske"
-              target="_blank"
-              rel="noopener noreferrer"
+    <header>
+      <nav
+        data-state={menuState ? 'active' : undefined}
+        className="fixed z-20 w-full border-b border-dashed bg-white backdrop-blur md:relative dark:bg-zinc-950/50 lg:dark:bg-transparent"
+      >
+        <div className="m-auto max-w-5xl px-6">
+          <div className="flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
+            <div className="flex w-full justify-between lg:w-auto">
+              <Link href="/" aria-label="Go home" className="block">
+               <Logo size={60} />
+              </Link>
+
+              <button
+                onClick={() => setMenuState(!menuState)}
+                aria-label={menuState ? 'Close Menu' : 'Open Menu'}
+                className="relative z-20 -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden"
+              >
+                <Menu
+                  className={`m-auto size-6 duration-200 ${
+                    menuState ? 'rotate-180 scale-0 opacity-0' : ''
+                  }`}
+                />
+                <X
+                  className={`absolute inset-0 m-auto size-6 duration-200 ${
+                    menuState ? 'rotate-0 scale-100 opacity-100' : '-rotate-180 scale-0 opacity-0'
+                  }`}
+                />
+              </button>
+            </div>
+
+            <div
+              className={`bg-background ${
+                menuState ? 'block' : 'hidden'
+              } lg:flex mb-6 w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent`}
             >
-              Join Community
-            </LinkButton>
+              <div className="lg:pr-4">
+                <ul className="space-y-6 text-base lg:flex lg:gap-8 lg:space-y-0 lg:text-sm">
+                  {menuItems.map((item, index) => (
+                    <li key={index}>
+                      <Link
+                        href={item.to}
+                        className="text-black hover:text-accent-foreground block duration-150"
+                      >
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              
+              <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit lg:border-l lg:pl-6">
+               <Button asChild size="sm" className="bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 px-4 py-2 rounded-md inline-flex justify-center">
+                  <a href="https://bit.ly/joinreactdevske" target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                    Join the Community
+                  </a>
+              </Button>
+                                    
+              </div>
+
+
+            </div>
           </div>
-        )}
-        {screenWidth <= breakpoint && <DropdownMenu />}
+        </div>
       </nav>
     </header>
-  );
+  )
 }
