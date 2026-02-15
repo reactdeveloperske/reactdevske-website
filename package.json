@@ -19,6 +19,7 @@
   ],
   "dependencies": {
     "@headlessui/react": "^1.7.3",
+    "@radix-ui/react-slot": "^1.2.4",
     "@types/react-google-recaptcha": "^2.1.5",
     "axios": "^1.7.7",
     "class-variance-authority": "^0.7.1",
