@@ -31,7 +31,9 @@ test.describe('Test Hero Header Navigation Links', () => {
     ]);
     await newPage.waitForLoadState('load');
     // Accept bit.ly shortlink, docs.google.com, or forms.gle redirect destinations
-    expect(newPage.url()).toMatch(/^(https:\/\/)?(bit\.ly|docs\.google\.com|forms\.gle)/);
+    expect(newPage.url()).toMatch(
+      /^(https:\/\/)?(bit\.ly|docs\.google\.com|forms\.gle)/
+    );
   });
 
   test('Join ReactDevsKe link should open google form in new tab', async ({
@@ -45,6 +47,8 @@ test.describe('Test Hero Header Navigation Links', () => {
     ]);
     await newPage.waitForLoadState('load');
     // Accept bit.ly shortlink, docs.google.com, or forms.gle redirect destinations
-    expect(newPage.url()).toMatch(/^(https:\/\/)?(bit\.ly|docs\.google\.com|forms\.gle)/);
+    expect(newPage.url()).toMatch(
+      /^(https:\/\/)?(bit\.ly|docs\.google\.com|forms\.gle)/
+    );
   });
 });
