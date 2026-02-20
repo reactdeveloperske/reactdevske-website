@@ -15,7 +15,6 @@ export default function HeroHeader() {
     window.addEventListener('resize', handleResize);
 
     return () => {
-      cancelAnimationFrame(rafId);
       window.removeEventListener('resize', handleResize);
     };
   }, []);
