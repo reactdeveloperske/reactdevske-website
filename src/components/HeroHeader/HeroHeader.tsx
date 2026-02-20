@@ -4,16 +4,16 @@ import MobileHero from './MobileHero';
 
 export default function HeroHeader() {
   const [screenWidth, setScreenWidth] = useState<number | null>(() =>
-    typeof window !== 'undefined' ? window.innerWidth : null,
+    typeof window !== 'undefined' ? window.innerWidth : null
   );
 
   const breakpoint = 768;
 
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);
-    
+
     window.addEventListener('resize', handleResize);
-    
+
     return () => {
       window.removeEventListener('resize', handleResize);
     };
