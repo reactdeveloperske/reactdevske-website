@@ -8,9 +8,7 @@ export default function HeroHeader() {
   const breakpoint = 768;
 
   useEffect(() => {
-    const rafId = requestAnimationFrame(() =>
-      setScreenWidth(window.innerWidth)
-    );
+    setScreenWidth(window.innerWidth);
 
     const handleResize = () => setScreenWidth(window.innerWidth);
 
