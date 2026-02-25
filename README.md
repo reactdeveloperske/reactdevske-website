@@ -8,6 +8,7 @@ This repository contains the source for the community showcase website maintaine
 Live production: https://www.reactdevske.org/
 
 **Table of contents**
+
 - Overview
 - Features
 - Tech stack
@@ -23,6 +24,7 @@ Live production: https://www.reactdevske.org/
 This site showcases the community, upcoming events, contact information and resources for React developers in Kenya. It's intended as a community-maintained, easy-to-contribute codebase for public-facing content and event announcements.
 
 **Features**
+
 - Responsive, accessible UI built with Next.js and Tailwind CSS.
 - Pages for home, about, contact, events, news, forum and members.
 - Reusable component library under `src/components`.
@@ -30,6 +32,7 @@ This site showcases the community, upcoming events, contact information and reso
 - Docker support for production-like local testing.
 
 **Tech stack**
+
 - Next.js (pages-based) + React
 - TypeScript
 - Tailwind CSS
@@ -39,6 +42,7 @@ This site showcases the community, upcoming events, contact information and reso
 **Quickstart (local development)**
 
 Prerequisites:
+
 - Node.js 16+ (or the version compatible with the `next` dependency)
 - npm or yarn
 
@@ -47,7 +51,7 @@ Install dependencies:
 ```bash
 npm install
 # or
-yarn install 
+yarn install
 ```
 
 Run the development server:
@@ -65,6 +69,7 @@ npm run start
 ```
 
 Useful scripts (from `package.json`):
+
 - `npm run dev` — starts Next.js in development mode
 - `npm run build` — produces a production build
 - `npm run start` — runs the production build
@@ -104,6 +109,7 @@ Playwright config is at `playwright.config.ts`.
 - `package.json`, `tsconfig.json`, `next.config.js` — build & tooling
 
 If you want to explore components, start with:
+
 - `src/components/HeroHeader` — site hero
 - `src/components/Navbar` — navigation and menu
 - `src/components/Events` — events listing and display
@@ -117,6 +123,7 @@ Contributions are welcome. Please follow the contribution guidelines and communi
 - Code of conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 
 Suggested workflow:
+
 1. Fork the repo and create a feature branch.
 2. Run the dev server and make changes.
 3. Ensure TypeScript and lint checks pass: `npm run typecheck` and `npm run lint`.
@@ -134,4 +141,5 @@ Figma design file used for the website is available here:
 https://www.figma.com/file/TVwnaDhBGeVdnVKdf6H91C/React-developers-community-website
 
 ---
+
 _Last updated: 2026-02-15_

@@ -24,7 +24,7 @@ export default function Home() {
       </Head>
       <main className="">
         <Navbar />
-    
+
         <HeroHeader />
         <div className="flex flex-col py-12 bg-[#030e30] text-white">
           <AboutUs />

@@ -1,21 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import DesktopVersion from './DesktopVersion';
-import MobileVersion from './MobileVersion';
 import Footer from './Footer';
 
 export default function ContactUs() {
   const [screenWidth, setScreenWidth] = useState<number | null>(null);
 
-  const breakpoint = 1024;
-
   useEffect(() => {
-    setScreenWidth(window.innerWidth);
+    const rafId = requestAnimationFrame(() =>
+      setScreenWidth(window.innerWidth)
+    );
 
     const handleResize = () => setScreenWidth(window.innerWidth);
 
     window.addEventListener('resize', handleResize);
 
-    return () => window.removeEventListener('resize', handleResize);
+    return () => {
+      cancelAnimationFrame(rafId);
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   if (!screenWidth) return null;
@@ -26,7 +28,7 @@ export default function ContactUs() {
         Contact us
       </h2>
       <DesktopVersion />
-      <Footer/>
+      <Footer />
     </section>
   );
 }

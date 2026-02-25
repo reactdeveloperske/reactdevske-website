@@ -1,23 +1,22 @@
-'use client'
+'use client';
 
-import React from 'react'
-import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import React from 'react';
+import Link from 'next/link';
+import { Menu, X } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import Logo from '../Logo/Logo';
 
 const menuItems = [
   { name: 'Home', to: '/' },
-  { name: 'Community', to: '/community' },         
-  { name: 'Workshops & Events', to: '/events' },  
-  { name: 'Resources', to: '/resources' },        
-  { name: 'Contribute', to: '/contribute' },      
-  { name: 'About Us', to: '/about' },             
-]
-
+  { name: 'Community', to: '/community' },
+  { name: 'Workshops & Events', to: '/events' },
+  { name: 'Resources', to: '/resources' },
+  { name: 'Contribute', to: '/contribute' },
+  { name: 'About Us', to: '/about' },
+];
 
 export default function Navbar() {
-  const [menuState, setMenuState] = React.useState(false)
+  const [menuState, setMenuState] = React.useState(false);
 
   return (
     <header>
@@ -29,7 +28,7 @@ export default function Navbar() {
           <div className="flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
             <div className="flex w-full justify-between lg:w-auto">
               <Link href="/" aria-label="Go home" className="block">
-               <Logo size={60} />
+                <Logo size={60} />
               </Link>
 
               <button
@@ -44,7 +43,9 @@ export default function Navbar() {
                 />
                 <X
                   className={`absolute inset-0 m-auto size-6 duration-200 ${
-                    menuState ? 'rotate-0 scale-100 opacity-100' : '-rotate-180 scale-0 opacity-0'
+                    menuState
+                      ? 'rotate-0 scale-100 opacity-100'
+                      : '-rotate-180 scale-0 opacity-0'
                   }`}
                 />
               </button>
@@ -69,23 +70,26 @@ export default function Navbar() {
                   ))}
                 </ul>
               </div>
-              
+
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit lg:border-l lg:pl-6">
-               <Button asChild size="sm" className="bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 px-4 py-2 rounded-md inline-flex justify-center">
-                  <a href="https://bit.ly/joinreactdevske" target="_blank"
-                  rel="noopener noreferrer"
+                <Button
+                  asChild
+                  size="sm"
+                  className="bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 px-4 py-2 rounded-md inline-flex justify-center"
+                >
+                  <a
+                    href="https://bit.ly/joinreactdevske"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Join the Community
                   </a>
-              </Button>
-                                    
+                </Button>
               </div>
-
-
             </div>
           </div>
         </div>
       </nav>
     </header>
-  )
+  );
 }

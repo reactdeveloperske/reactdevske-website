@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { useState } from 'react';
 
 import { useForm, ValidationError } from '@formspree/react';
@@ -29,10 +28,10 @@ export default function DesktopVersion() {
 
   return (
     <>
-      <h1 className="hidden lg:block font-montserrat text-[32px] font-[900] w-fit mx-auto py-4">
+      <h1 className="hidden lg:block font-montserrat text-[32px] font-black w-fit mx-auto py-4">
         Have an interesting idea we should discuss?
       </h1>
-      <div className="max-w-[800px] mx-auto pt-[36px] pb-[46px] rounded-[10px]">
+      <div className="max-w-[800px] mx-auto pt-9 pb-[46px] rounded-[10px]">
         <form className="mx-auto w-3/4" onSubmit={handleSubmit}>
           <label
             htmlFor="name"
@@ -45,7 +44,7 @@ export default function DesktopVersion() {
             type="text"
             name="name"
             placeholder={'Jane Doe'}
-            className="border border-[#CEEDF4] w-full rounded-lg px-4 py-3 mb-5 placeholder-[#7E7979] outline-none font-montserrat text-base"
+            className="border border-[#CEEDF4] w-full rounded-lg px-4 py-3 mb-5 placeholder-[#7E7979] outline-none font-montserrat text-base bg-white"
             required
           />
           <ValidationError prefix="Name" field="name" errors={state.errors} />
@@ -60,7 +59,7 @@ export default function DesktopVersion() {
             type="email"
             name="email"
             placeholder={'you@example.com'}
-            className="border border-[#CEEDF4] w-full rounded-lg px-4 py-3 mb-5 outline-none placeholder-[#7E7979] font-montserrat text-base"
+            className="border border-[#CEEDF4] w-full rounded-lg px-4 py-3 mb-5 outline-none placeholder-[#7E7979] font-montserrat text-base bg-white"
             required
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
@@ -74,7 +73,7 @@ export default function DesktopVersion() {
             id="message"
             name="message"
             placeholder="Hello, I'm getting in touch ..."
-            className="border border-[#CEEDF4] w-full rounded-lg px-4 py-[22px] mb-9 h-[178px] resize-none outline-none placeholder-[#7E7979] font-montserrat text-base"
+            className="border border-[#CEEDF4] w-full rounded-lg px-4 py-[22px] mb-9 h-[178px] resize-none outline-none placeholder-[#7E7979] font-montserrat text-base bg-white"
             required
           />
 
