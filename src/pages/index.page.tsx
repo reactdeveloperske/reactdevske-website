@@ -4,7 +4,8 @@ import ContactUs from '../components/ContactUs';
 import Events from '../components/Events/Events';
 import MissionPillars from '../components/MissionPillars/MissionPillars';
 import HeroHeader from '../components/HeroHeader';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar';;
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
         <MissionPillars />
         <Events />
         <ContactUs />
+        <Footer />
       </main>
     </div>
   );
