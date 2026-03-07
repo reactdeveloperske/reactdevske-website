@@ -3,11 +3,19 @@
 const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ['page.tsx', 'api.ts'],
-  eslint: {
-    dirs: ['src', 'e2e'],
-  },
   images: {
-    domains: ['bit.ly', 'res.cloudinary.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'bit.ly',
+        pathname: '/:path*',
+      },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        pathname: '/:path*',
+      },
+    ],
   },
 };
 

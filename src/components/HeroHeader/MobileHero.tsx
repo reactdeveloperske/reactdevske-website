@@ -1,22 +1,20 @@
-
-import React from 'react';
 import LinkButton from '../LinkButton/LinkButton';
-import backgroundImage from '/public/images/hero-image.jpg'; // Add your background image here
 
 export default function MobileHero() {
   return (
     <div
-      className="flex items-center justify-center bg-black bg-cover bg-center text-white mt-0"
+      className="relative flex items-center justify-center bg-cover bg-center text-white mt-0"
       style={{
-        backgroundImage: `url(${backgroundImage.src})`
+        backgroundImage: `url('/images/hero-image.jpg')`,
       }}
     >
-      
-      <div 
-      className="bg-black pt-[20vh] h-full justify-end items-center pb-[5vh] flex-col bg-opacity-50 p-6 rounded-md flex   bg-cover bg-center text-white mt-0"
-      > {/* Adds opacity to make text more legible */}
+      {/* overlay for legibility using Tailwind */}
+      <div className="absolute inset-0 bg-black/50 pointer-events-none" />
+
+      <div className="relative z-10 pt-[20vh] h-full justify-end items-center pb-[5vh] flex-col p-6 rounded-md flex text-white mt-0">
+        {/* Adds opacity to make text more legible */}
         <h1 className="font-robotoMono font-medium text-2xl text-center mb-2 text-white">
-          React Developer Community Kenya 
+          React Developer Community Kenya
         </h1>
         <div className="flex justify-center items-center mb-[34px]">
           <LinkButton

@@ -8,9 +8,11 @@ export default function AboutUs() {
         About Us
       </h2>
       <p className="sm:text-sm md:text-xl tracking-wide text-center space-y-4">
-        We are a vibrant community of developers passionate about React NextJs React Native and the powerful ecosystem. Our mission is to empower developers—from full-stack
-        experts to frontend enthusiasts—to grow, collaborate, and create meaningful 
-        solutions. Join us to connect, learn, and contribute to the future of web development.
+        We are a vibrant community of developers passionate about React NextJs
+        React Native and the powerful ecosystem. Our mission is to empower
+        developers—from full-stack experts to frontend enthusiasts—to grow,
+        collaborate, and create meaningful solutions. Join us to connect, learn,
+        and contribute to the future of web development.
       </p>
     </section>
   );

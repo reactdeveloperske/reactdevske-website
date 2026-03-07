@@ -11,9 +11,9 @@ test.describe('Home page tests', () => {
     ).toBeVisible();
   });
 
-  test("should show 'Join Community' button", async ({ page }) => {
+  test("should show 'Join the Community' button", async ({ page }) => {
     await expect(
-      page.getByRole('link', { name: 'Join Community' })
+      page.getByRole('link', { name: 'Join the Community' })
     ).toBeVisible();
   });
 

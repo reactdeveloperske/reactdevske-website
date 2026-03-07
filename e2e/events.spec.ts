@@ -14,7 +14,7 @@ test.describe('Test if see more link is clickable', () => {
     const [newPage] = await Promise.all([
       context.waitForEvent('page'),
       page.waitForLoadState(),
-      page.getByRole('link', { name: 'See More' }).click(),
+      page.getByRole('link', { name: 'See More Events' }).click(),
     ]);
     await expect(newPage).toHaveURL(
       'https://kommunity.com/reactjs-developer-community-kenya-reactdevske/events'
