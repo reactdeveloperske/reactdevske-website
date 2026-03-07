@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import DesktopVersion from './DesktopVersion';
-import Footer from './Footer';
+
+import MobileVersion from './MobileVersion';
+// import Footer from '../Footer';
 
 export default function ContactUs() {
   const [screenWidth, setScreenWidth] = useState<number | null>(null);
@@ -28,7 +30,7 @@ export default function ContactUs() {
         Contact us
       </h2>
       <DesktopVersion />
-      <Footer />
+      {/* <Footer/> */}
     </section>
   );
 }
