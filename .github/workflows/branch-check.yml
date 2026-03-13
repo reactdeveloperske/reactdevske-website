@@ -2,14 +2,28 @@ name: Check Source Branch
 on:
   pull_request:
     branches:
-      - main
+      - prod
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - edited
 jobs:
-  check-branch:
+  check-source-branch:
+    name: check-source-branch
     runs-on: ubuntu-latest
     steps:
-      - name: Verify source branch is 'develop'
+      - name: Check source branch
         run: |
-          if [[ "${{ github.head_ref }}" != "develop" ]]; then
-            echo "Error: Pull request must come from the 'develop' branch"
+          HEAD_BRANCH="${{ github.head_ref }}"
+          BASE_BRANCH="${{ github.base_ref }}"
+
+          echo "PR: ${HEAD_BRANCH} → ${BASE_BRANCH}"
+
+          if [ "$BASE_BRANCH" = "prod" ] && [ "$HEAD_BRANCH" != "develop" ]; then
+            echo "::error::Merging to 'prod' is only allowed from the 'develop' branch."
+            echo "::error::Source branch '${HEAD_BRANCH}' is not permitted."
             exit 1
           fi
+
+          echo "✅ Source branch '${HEAD_BRANCH}' is allowed to merge into '${BASE_BRANCH}'."
