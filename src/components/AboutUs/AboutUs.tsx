@@ -6,20 +6,16 @@ export default function AboutUs() {
       id="about-us"
       className="flex flex-col max-w-2xl justify-center items-center self-center space-y-4 px-4"
     >
-      <Fade direction="down">
-        <h2 className="text-3xl  md:text-6xl tracking-wide md:font-light uppercase">
-          About Us
-        </h2>
-        <p className="hidden md:inline-block text-4xl font-bold ">
-          Empowering great talent
-        </p>
-        <p className="sm:text-sm md:text-xl tracking-wide text-center space-y-4">
-          We bring together people who are passionate about React JS and{' '}
-          <br className="hidden md:display" />
-          it&apos;s ecosystem. We are a community of full-stack developers,
-          frontend developers and so much more
-        </p>
-      </Fade>
+      <h2 className="text-3xl md:text-6xl tracking-wide md:font-light uppercase">
+        About Us
+      </h2>
+      <p className="sm:text-sm md:text-xl tracking-wide text-center space-y-4">
+        We are a vibrant community of developers passionate about React NextJs
+        React Native and the powerful ecosystem. Our mission is to empower
+        developers—from full-stack experts to frontend enthusiasts—to grow,
+        collaborate, and create meaningful solutions. Join us to connect, learn,
+        and contribute to the future of web development.
+      </p>
     </section>
   );
 }

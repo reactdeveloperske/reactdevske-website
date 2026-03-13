@@ -1,11 +1,9 @@
-import '../styles/globals.css';
-import Banner from '../components/Banner';
 import type { AppProps } from 'next/app';
+import '../styles/globals.css';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Banner />
       <Component {...pageProps} />
     </>
   );

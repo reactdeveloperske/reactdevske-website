@@ -1,6 +1,5 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
-import { useState } from 'react';
 import Image from 'next/image';
+import { useState } from 'react';
 import mailIcon from '../../../public/img/mail-icon.svg';
 import messageIcon from '../../../public/img/message-icon.svg';
 
@@ -32,9 +31,12 @@ export default function MobileVersion() {
   return (
     <>
       <h1 className="text-black font-robotoMono text-4xl w-fit mx-auto py-4 font-bold">
-        Let's talk React
+        Let&apos;s talk React
       </h1>
-      <form className="w-4/5 mx-auto md:w-2/3" onSubmit={handleSubmit}>
+      <form
+        className="w-4/5 mx-auto md:w-2/3 bg-[#0096c7]"
+        onSubmit={handleSubmit}
+      >
         <label
           htmlFor="name"
           className="border border-black w-full rounded-md p-2 my-2 flex"
@@ -44,7 +46,7 @@ export default function MobileVersion() {
             type="text"
             name="name"
             placeholder="Name"
-            className=" placeholder-[#7E7979] outline-none flex-grow ml-8 font-robotoMono text-base"
+            className=" placeholder-black outline-none grow ml-8 font-robotoMono text-base bg-white text-black"
             required
           />
         </label>
@@ -58,7 +60,7 @@ export default function MobileVersion() {
             alt=""
             width={25}
             height={25}
-            color="#7E7979"
+            color="#000"
             className="inline-block"
           />
           <input
@@ -66,7 +68,7 @@ export default function MobileVersion() {
             type="email"
             placeholder="Email"
             name="email"
-            className="inline-block ml-2 outline-none flex-grow placeholder-[#7E7979] font-robotoMono text-base"
+            className="inline-block ml-2 outline-none grow placeholder-black font-robotoMono text-base bg-white text-black"
             required
           />
         </label>
@@ -82,7 +84,7 @@ export default function MobileVersion() {
           <textarea
             placeholder="Message"
             name="message"
-            className=" inline-block ml-2 h-[270px] resize-none outline-none flex-grow placeholder-[#7E7979] font-robotoMono text-base "
+            className=" inline-block ml-2 h-[270px] resize-none outline-none grow placeholder-black font-robotoMono text-base bg-white text-black"
             required
           ></textarea>
         </label>

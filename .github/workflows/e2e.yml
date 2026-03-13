@@ -1,30 +1,30 @@
 name: End-to-end Tests
 on:
   push:
-    branches: [main, develop]
+    branches: [main, develop, prod]
   pull_request:
-    branches: [main, develop]
+    branches: [main, develop, prod]
 jobs:
   e2e:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
       - name: Prepare .env file
         run: |
           rm -f .env && touch .env
           echo "NEXT_PUBLIC_FORMSPREE_ID=fake123" >> .env
           echo "NEXT_PUBLIC_RECAPTCHA_SITE_KEY=123fAkE" >> .env
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
-          node-version: '18.x'
+          node-version: '24.x'
       - name: Install dependencies
         run: npm ci
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests
         run: npm run test
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v5
         if: always()
         with:
           name: playwright-report

@@ -6,56 +6,52 @@ import { Fade } from 'react-awesome-reveal';
 const events: EventData[] = [
   {
     id: 1,
+    title: 'RenderCon Kenya - React Conference',
+    description:
+      'RenderCon is the annual React and React Native tech event organized by React Devs KE. Join us for talks, workshops, and networking opportunities.',
+    image_url: '/images/rendercon.png', // Replace with a locally stored image
+    target: 'https://rendercon.org',
+  },
+  {
+    id: 2,
     title: 'Physical Meetups',
     description: 'Physical meetups where we share, learn and network.',
-    image_url:
-      'https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532589/website-images/physical_meetup_fqkitv.jpg',
+    image_url: '/images/meetups.jpeg', // Replace with local image
+    target:
+      'https://kommunity.com/reactjs-developer-community-kenya-reactdevske/events',
+  },
+
+  {
+    id: 3,
+    title: 'Joint Meetups',
+    description: 'Meetups hosted in collaboration with other tech communities.',
+    image_url: '/images/joints.png', // Replace with local image
     target:
       'https://kommunity.com/reactjs-developer-community-kenya-reactdevske/events',
   },
   {
-    id: 2,
-    title: 'Weekly Online Standups',
-    description:
-      'Weekly open calls in the community’s Telegram group discussing industry-related topics.',
-    image_url:
-      'https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532589/website-images/weekly_standups_lg3rth.jpg',
-    target: 'https://bit.ly/joinreactdevske',
-  },
-  {
-    id: 3,
-    title: 'Community Power Sessions',
-    description:
-      'Community members meet and share technical concepts with other members of the community.',
-    image_url:
-      'https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532589/website-images/community_sessions_xsyd8d.jpg',
-    target: 'https://www.youtube.com/channel/UC9_eVcPBk4T-DcZLHpQfy4w/videos',
-  },
-  {
     id: 4,
-    title: 'Joint Meetups',
-    description: 'Meetups hosted in collaboration with other tech communities.',
-    image_url: 'https://bit.ly/placeholder-img',
+    title: 'Online Standups',
+    description:
+      'Monthly open calls on Google Meet bringing together people from different communities.',
+    image_url: '/images/standups.png', // Replace with local image
     target:
       'https://kommunity.com/reactjs-developer-community-kenya-reactdevske/events',
   },
   {
     id: 5,
-    title: 'Monthly Online Standups',
-    description:
-      'Monthly open calls on Google Meet  bringing together people from different communities.',
-    image_url:
-      'https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532589/website-images/physical_meetup_fqkitv.jpg',
-    target:
-      'https://kommunity.com/reactjs-developer-community-kenya-reactdevske/events',
-  },
-  {
-    id: 6,
     title: 'Community Challenges',
     description:
       'We organize open source challenges to keep the community engaged.',
-    image_url:
-      'https://res.cloudinary.com/reactjs-devs-ke/image/upload/v1678532589/website-images/physical_meetup_fqkitv.jpg',
+    image_url: '/images/challenges.jpg', // Replace with local image
+    target: 'https://github.com/reactdeveloperske/community-coding-challenges',
+  },
+  {
+    id: 6,
+    title: 'OpenSource Projects',
+    description:
+      'We actively contribute to open source projects, fostering collaboration, learning, and innovation within the community.',
+    image_url: '/images/opensource.png', // Replace with local image
     target: 'https://github.com/reactdeveloperske/community-coding-challenges',
   },
 ];
@@ -64,15 +60,12 @@ export default function Events() {
   return (
     <section
       id="events"
-      className="relative flex flex-col items-center justify-center w-full py-16 bg-white md:py-20 gap-y-2 md:gap-y-5"
+      className="relative flex flex-col items-center justify-center w-full pt-16 bg-[#023e8a] md:py-20 gap-y-2 md:gap-y-5"
     >
-      <Fade direction="down">
-        <h2 className="flex text-2xl  items-center justify-center font-light tracking-wide">
-          Events
-        </h2>
-        <h2 className="pb-2 text-2xl font-bold md:pb-10">Community Events</h2>
-      </Fade>
-      <div className="grid grid-cols-1 gap-y-4 md:gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 xl:gap-x-8 md:grid-cols-2 bg-[#09AFC6] px-4 md:px-10 lg:px-16 py-8 md:py-14 xl:py-16">
+      <h2 className="pb-2 text-3xl text-white font-bold md:pb-10">
+        Community Events
+      </h2>
+      <div className="grid grid-cols-1 gap-y-4  md:gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8 md:grid-cols-2 px-4 md:px-10 lg:px-16 pt-8 md:pt-14 xl:pt-16">
         {events.map((event) => (
           <DisplayRC
             key={event.id}
@@ -83,12 +76,15 @@ export default function Events() {
             target={event.target}
           />
         ))}
-
-        <div className="flex items-center justify-center pt-1 tracking-wide text-white md:pt-0 md:text-right md:absolute md:bottom-24 md:right-10 2xl:bottom-36 lg:right-16 hover:tracking-widest hover:transition-all hover:duration-500 hover:underline">
-          <Link href="https://kommunity.com/reactjs-developer-community-kenya-reactdevske/events">
-            <a target="_blank">See More</a>
-          </Link>
-        </div>
+      </div>
+      <div className="flex items-start justify-center md:justify-end tracking-wide mt-4 px-4 md:px-10 lg:px-16 w-full text-white pb-10 md:pb-14 xl:pb-16">
+        <Link
+          href="https://kommunity.com/reactjs-developer-community-kenya-reactdevske/events"
+          target="_blank"
+          className="bg-[#61dafb] text-black! px-6 w-full max-w-[350px] text-center py-3 rounded-md font-semibold text-lg hover:bg-[#48cae4] transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+        >
+          See More Events
+        </Link>
       </div>
     </section>
   );
