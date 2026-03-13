@@ -1,0 +1,12 @@
+{
+  "includeBranches": ["prod", "develop"],
+  "triggerOnUpdates": true,
+  "statusCheck": true,
+  "strictness": 2,
+  "rules": [
+    {
+      "rule": "All changes to prod must go through develop first.",
+      "severity": "high"
+    }
+  ]
+}
