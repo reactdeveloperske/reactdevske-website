@@ -17,7 +17,7 @@ export default function AboutPage() {
             We organize regular meetups, workshops, and hackathons to bring together developers of all skill levels. Whether you're a beginner looking to learn React.js or an experienced developer seeking to connect with like-minded individuals, our community welcomes you.
           </p>
           <p className="text-lg text-gray-700">
-            Join us on our journey to grow the React.js community in Kenya and make a positive impact on the tech industry. Together, we can create amazing things with React.js!
+            Join us on our journey to grow the React.js community in Kenya and make a positive impact on the tech industry.
           </p>
         </div>
       </main>
